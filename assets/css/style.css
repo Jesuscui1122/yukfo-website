@@ -49,6 +49,24 @@ h1,h2,h3{line-height:1.35}
 .card h3{font-size:1.05rem;margin-bottom:10px;color:var(--blue)}
 .card p{color:var(--gray);font-size:.95rem}
 .card .tag{display:inline-block;font-size:.75rem;color:var(--gold-deep);border:1px solid var(--gold);border-radius:var(--radius);padding:2px 8px;margin-bottom:12px}
+/* product cards */
+.product-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);overflow:hidden;display:flex;flex-direction:column}
+.product-card img{width:100%;height:190px;object-fit:contain;background:#fff;border-bottom:1px solid var(--line);padding:14px}
+.product-card .p-body{padding:18px 20px 20px}
+.product-card h3{font-size:1.02rem;margin-bottom:4px}
+.product-card .sku{font-size:.75rem;color:var(--gold-deep);font-weight:600;letter-spacing:.03em}
+.product-card p{color:var(--gray);font-size:.9rem;margin:8px 0 12px}
+.product-card .mats{font-size:.78rem;color:var(--gray)}
+.product-card .mats b{color:var(--ink)}
+/* FAQ */
+.faq-item{border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;margin-bottom:12px;background:var(--bg)}
+.faq-item h3{font-size:1rem;color:var(--ink);margin-bottom:8px}
+.faq-item p{color:var(--gray);font-size:.93rem;max-width:70ch}
+/* quality steps */
+.qstep{display:flex;gap:18px;border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;margin-bottom:14px;background:var(--bg)}
+.qstep .num{font-size:1.4rem;font-weight:700;color:var(--blue);min-width:44px;text-align:center;border-right:1px solid var(--line);padding-right:18px}
+.qstep h3{font-size:1rem;margin-bottom:6px}
+.qstep p{color:var(--gray);font-size:.92rem;max-width:65ch}
 /* industry list */
 .industry{display:flex;gap:24px;align-items:center;border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-bottom:20px;background:var(--bg)}
 .industry img{width:220px;height:150px;object-fit:cover;border-radius:var(--radius)}
