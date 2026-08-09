@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Send Your Project | YUKFO</title>
+<meta name="description" content="Send your drawing or idea to YUKFO. Reply within 24 hours on working days. Custom manufacturing, product sourcing, and project delivery.">
+<meta property="og:title" content="Contact — YUKFO">
+<meta property="og:description" content="Send your drawing or idea — reply within 24 hours on working days.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="YUKFO logo"><span>YUKFO</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="border-top:0">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="lead">Send your drawing, idea, or question — you'll have a reply within 24 hours on working days.</p>
+      <div class="notice"><b>Tip:</b> include quantity, target price if you have one, and delivery date. If you have drawings or specs, mention them and I'll share a secure way to send files.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- 收件邮箱：修改只改此表单 action 里的 hkyukfo@outlook.com（以及页脚 mailto） -->
+      <form action="https://formsubmit.co/hkyukfo@outlook.com" method="POST" class="form-grid">
+        <input type="hidden" name="_subject" value="New inquiry from yukfo.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="field"><label for="name">Name *</label><input id="name" name="Name" type="text" required></div>
+        <div class="field"><label for="email">Email *</label><input id="email" name="Email" type="email" required></div>
+        <div class="field"><label for="company">Company</label><input id="company" name="Company" type="text"></div>
+        <div class="field"><label for="product">Product / Part Description *</label><textarea id="product" name="Product description" required placeholder="What are we making? Material, size, quantity..."></textarea></div>
+        <div class="field"><label for="quantity">Quantity</label><input id="quantity" name="Quantity" type="text"></div>
+        <div class="field"><label for="target">Target Price (USD)</label><input id="target" name="Target price" type="text"></div>
+        <div class="field"><label for="deadline">Delivery Deadline</label><input id="deadline" name="Delivery deadline" type="text"></div>
+        <div style="grid-column:1/-1"><button class="btn" type="submit">Send Inquiry</button></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 YUKFO. Custom manufacturing &amp; sourcing.</span>
+    <span><a href="mailto:hkyukfo@outlook.com">hkyukfo@outlook.com</a></span>
+  </div>
+</footer>
+</body>
+</html>
