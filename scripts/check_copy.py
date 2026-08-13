@@ -84,12 +84,16 @@ def check(page):
     return errs, warns
 
 def main():
-    if len(sys.argv) >= 2 and sys.argv[1] == '--page' and len(sys.argv) < 3:
-        print('check_copy.py [--page <name>]', file=sys.stderr)
-        sys.exit(2)
-    pages = sys.argv[2:] if len(sys.argv) > 2 and sys.argv[1] == '--page' else \
-            [os.path.splitext(os.path.basename(p))[0] for p in sorted(glob.glob(os.path.join(ROOT, '*.html')))]
+    args = sys.argv[1:]
+    if args and args[0] == '--page':
+        if len(args) < 2:
+            print('usage: check_copy.py [--page <name>]', file=sys.stderr)
+            sys.exit(2)
+        pages = args[1:]
+    else:
+        pages = [os.path.splitext(os.path.basename(p))[0] for p in sorted(glob.glob(os.path.join(ROOT, '*.html')))]
     bad, n_err, n_warn = False, 0, 0
+    total_w = total_base = 0
     for p in pages:
         if not os.path.exists(os.path.join(ROOT, p + '.html')):
             print(f'{p}.html: FAIL')
@@ -107,13 +111,18 @@ def main():
             bad = True
         n_err += len(errs)
         n_warn += len(warns)
+        w = page_words(p)
+        base = BASELINE_WORDS.get(p)
+        if base is not None:
+            total_w += w
+            total_base += base
     if len(pages) > 1:
-        total = sum(page_words(p) for p in pages)
-        base = sum(BASELINE_WORDS.get(p, 0) for p in pages)
-        if base > 0:
-            r = total / base
+        if total_base > 0:
+            r = total_w / total_base
             flag = '' if TOTAL_BAND[0] <= r <= TOTAL_BAND[1] else '（超出全站带）'
-            print(f'全站合计 {total} 词 / 基线 {base}（{r:.0%}）{flag}')
+            print(f'全站合计 {total_w} 词 / 基线 {total_base}（{r:.0%}）{flag}')
+        else:
+            print(f'全站合计 {total_w} 词（无基线页面）')
     print(f'\n{"FAIL" if bad else "PASS"}: {n_err} 错误, {n_warn} 警告')
     sys.exit(1 if bad else 0)
 
