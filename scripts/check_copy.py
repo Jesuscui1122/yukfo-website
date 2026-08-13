@@ -40,7 +40,7 @@ def page_words(page):
 
 def body_text(page):
     m = re.search(r'<body[^>]*>(.*)</body>', raw(page), flags=re.S)
-    return strip_tags(m.group(1))
+    return strip_tags(m.group(1)) if m else ''
 
 def check(page):
     errs, warns = [], []
@@ -72,18 +72,31 @@ def check(page):
             errs.append(f'必备事实 {k!r} 缺失')
     # 5) 词数带
     w = page_words(page)
-    ratio = w / BASELINE_WORDS[page]
-    if not (PAGE_BAND[0] <= ratio <= PAGE_BAND[1]):
-        warns.append(f'词数 {w}（基线 {BASELINE_WORDS[page]}，{ratio:.0%}）超出带 {PAGE_BAND[0]:.0%}-{PAGE_BAND[1]:.0%}')
+    base = BASELINE_WORDS.get(page)
+    if base is None:
+        print(f'  ok 词数 {w}（无基线，跳过带检查）')
     else:
-        print(f'  ok 词数 {w}（{ratio:.0%}）')
+        ratio = w / base
+        if not (PAGE_BAND[0] <= ratio <= PAGE_BAND[1]):
+            warns.append(f'词数 {w}（基线 {base}，{ratio:.0%}）超出带 {PAGE_BAND[0]:.0%}-{PAGE_BAND[1]:.0%}')
+        else:
+            print(f'  ok 词数 {w}（{ratio:.0%}）')
     return errs, warns
 
 def main():
+    if len(sys.argv) >= 2 and sys.argv[1] == '--page' and len(sys.argv) < 3:
+        print('check_copy.py [--page <name>]', file=sys.stderr)
+        sys.exit(2)
     pages = sys.argv[2:] if len(sys.argv) > 2 and sys.argv[1] == '--page' else \
             [os.path.splitext(os.path.basename(p))[0] for p in sorted(glob.glob(os.path.join(ROOT, '*.html')))]
     bad, n_err, n_warn = False, 0, 0
     for p in pages:
+        if not os.path.exists(os.path.join(ROOT, p + '.html')):
+            print(f'{p}.html: FAIL')
+            print(f'  ERR 页面不存在')
+            bad = True
+            n_err += 1
+            continue
         errs, warns = check(p)
         print(f'{p}.html: {"PASS" if not errs else "FAIL"}')
         for e in errs:
@@ -96,10 +109,11 @@ def main():
         n_warn += len(warns)
     if len(pages) > 1:
         total = sum(page_words(p) for p in pages)
-        base = sum(BASELINE_WORDS[p] for p in pages)
-        r = total / base
-        flag = '' if TOTAL_BAND[0] <= r <= TOTAL_BAND[1] else '（超出全站带）'
-        print(f'全站合计 {total} 词 / 基线 {base}（{r:.0%}）{flag}')
+        base = sum(BASELINE_WORDS.get(p, 0) for p in pages)
+        if base > 0:
+            r = total / base
+            flag = '' if TOTAL_BAND[0] <= r <= TOTAL_BAND[1] else '（超出全站带）'
+            print(f'全站合计 {total} 词 / 基线 {base}（{r:.0%}）{flag}')
     print(f'\n{"FAIL" if bad else "PASS"}: {n_err} 错误, {n_warn} 警告')
     sys.exit(1 if bad else 0)
 
