@@ -24,7 +24,7 @@ MUST_KEEP = {
 BASELINE_WORDS = {'index': 287, 'about': 339, 'services': 537, 'processes': 197,
                   'deliveries': 164, 'faq': 401, 'contact': 119}
 PAGE_BAND = (0.70, 0.98)   # 单页压缩后词数 / 基线词数
-TOTAL_BAND = (0.70, 0.85)  # 全站合计压缩带（约 -15~30%）
+TOTAL_BAND = (0.70, 0.92)  # 全站合计压缩带（约 -8~30%；上界按用户已批准的最终态 89% 校准）
 
 def raw(page):
     return open(os.path.join(ROOT, page + '.html'), encoding='utf-8').read()
