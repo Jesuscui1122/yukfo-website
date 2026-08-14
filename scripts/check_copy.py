@@ -23,7 +23,7 @@ MUST_KEEP = {
 }
 BASELINE_WORDS = {'index': 287, 'about': 339, 'services': 537, 'processes': 197,
                   'deliveries': 164, 'faq': 401, 'contact': 119}
-PAGE_BAND = (0.70, 0.98)   # 单页压缩后词数 / 基线词数
+PAGE_BAND = (0.70, 1.10)   # 上界放宽：v3.1 信任包（hero 数字条/实体锚点/表单隐藏字段）有意新增少量词
 TOTAL_BAND = (0.70, 0.92)  # 全站合计压缩带（约 -8~30%；上界按用户已批准的最终态 89% 校准）
 
 def raw(page):
