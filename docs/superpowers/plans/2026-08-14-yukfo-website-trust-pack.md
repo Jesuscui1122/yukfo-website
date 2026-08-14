@@ -34,7 +34,7 @@
 .hero p.sub{font-size:1.12rem;color:rgba(255,255,255,.85);max-width:640px;margin:18px 0 30px}
 .hero .accent{color:var(--gold)}
 .hero .btn{background:var(--gold);border:1px solid var(--gold);color:#1a1a1a!important}
-.hero .btn:hover{background:var(--gold-deep);color:#fff!important}
+.hero .btn:hover{background:var(--gold-deep);color:#1a1a1a!important}
 .hero .btn-ghost{background:transparent;color:#fff!important;border:1px solid rgba(255,255,255,.7)}
 .hero .btn-ghost:hover{background:rgba(255,255,255,.12)}
 .hero-stats{display:flex;gap:36px;margin-top:44px;flex-wrap:wrap}
