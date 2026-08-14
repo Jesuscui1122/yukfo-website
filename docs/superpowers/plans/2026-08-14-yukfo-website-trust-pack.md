@@ -187,6 +187,7 @@ git -c user.name="Jesus" -c user.email="hkyukfo@outlook.com" commit -m "feat: fo
 ```bash
 cd "/d/YUKFO WED"
 cp index.html services.html processes.html deliveries.html faq.html about.html contact.html thanks.html sitemap.xml public/
+cp assets/css/style.css public/assets/css/style.css
 ```
 - [ ] **Step 2: 终验**
 `python -X utf8 scripts/check_copy.py` → 8 页全部 PASS 0 错误（thanks 无基线跳过带检查属预期）；`diff -rq --exclude=.git . public/` 仅 "Only in" 行无 "Files ... differ"。
