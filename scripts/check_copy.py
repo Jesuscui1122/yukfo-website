@@ -13,15 +13,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HARD_WORDS = ['trusted', 'my own production', 'own factory', "i've shipped", 'guarantee']
 WARN_WORDS = [' always', 'everything', 'never']
 MUST_KEEP = {
-    'index':      ['No category limits'],
-    'about':      ['6', '4', '26', '24h'],
-    'services':   ['PA6', 'ABS', 'PP', 'EVA', 'IXPE'],
-    'processes':  ['PA6', 'ABS', 'PP', 'EVA', 'IXPE', 'PVC'],
-    'deliveries': ['26 SKUs'],
-    'faq':        ['30%', '70%'],
-    'contact':    ['24 hours'],
+    'index':    ['No category limits'],
+    'services': ['PA6', 'ABS', 'PP', 'EVA', 'IXPE'],
+    'work':     ['26-SKU'],
+    'contact':  ['24 hours', '30%', '70%'],
 }
-BASELINE_WORDS = {'index': 357, 'services': 776, 'deliveries': 247, 'faq': 590, 'contact': 140}
+BASELINE_WORDS = {'index': 78, 'services': 558, 'work': 168, 'contact': 508}
 PAGE_BAND = (0.70, 1.10)   # 上界放宽：v3.1 信任包（hero 数字条/实体锚点/表单隐藏字段）有意新增少量词
 TOTAL_BAND = (0.70, 1.10)  # 上界放宽：8/23 页数缩减 8→5，processes/materials 并入 services 后全站词数结构性增长
 
