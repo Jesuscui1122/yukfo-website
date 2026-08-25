@@ -10,6 +10,9 @@
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://yukfo.com/services">
 <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/main.js" defer></script>
 </head>
@@ -20,10 +23,8 @@
     <nav class="nav" aria-label="Main navigation">
       <a href="index">Home</a>
       <a href="services" class="active">Services</a>
-      <a href="processes">Processes</a>
       <a href="deliveries">Deliveries</a>
       <a href="faq">FAQ</a>
-      <a href="about">About</a>
       <a href="contact">Contact</a>
     </nav>
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
@@ -55,6 +56,40 @@
         <div class="card"><h3>Metal Fabrication</h3><p>Stamping, aluminum extrusion with bending, laser cutting, zinc die-casting, powder coating, for brackets, plates, handles, locks.</p></div>
         <div class="card"><h3>Project Parts</h3><p>Ready-made and custom parts your project needs, sourced, assembled, and tested.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Processes at a Glance</h2>
+      <p class="lead">Each process suits certain parts and materials, and has its own limits. Use the table to see which one fits your product.</p>
+      <div class="table-scroll"><table class="spec-table">
+        <tr><th>Process</th><th>Good For</th><th>Materials</th><th>Finishes</th><th>Limits</th></tr>
+        <tr><td>Injection Molding</td><td>Pulleys, enclosures, brackets, hardware, housings</td><td>PA6, ABS, PP</td><td>n/a</td><td>Mold cost per part; geometry must allow ejection</td></tr>
+        <tr><td>Rotational Molding</td><td>Kayaks, tanks, coolers, planters, large hollow parts</td><td>LLDPE, PP</td><td>n/a</td><td>Hollow parts only; wall thickness varies with rotation</td></tr>
+        <tr><td>Plastic Extrusion</td><td>Window and door profiles, trims, rails, structural sections</td><td>PVC, ABS</td><td>n/a</td><td>Constant cross-section along the length</td></tr>
+        <tr><td>Aluminum Extrusion</td><td>Window and door systems, rails, frames</td><td>Aluminum 6063</td><td>Anodizing (natural, black), powder coating, dye</td><td>Constant cross-section; bending after extrusion where needed</td></tr>
+        <tr><td>Foam Die-Cutting</td><td>Mats, gaskets, panels, packaging, insulation</td><td>EVA, IXPE</td><td>n/a</td><td>Flat sheet parts, cut in 2D</td></tr>
+        <tr><td>Metal Fabrication</td><td>Brackets, plates, handles, locks, frames</td><td>Carbon steel, stainless steel, zinc alloys</td><td>Powder coating, anodizing</td><td>Stamping needs tooling; laser cutting works best on flat sheet</td></tr>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Materials</h2>
+      <p class="lead">The materials behind delivered projects, with the processes and finishes that suit each one. Not sure what to use? Send the drawing or idea and I'll recommend a material and process together.</p>
+      <div class="table-scroll"><table class="spec-table">
+        <tr><th>Material</th><th>Type</th><th>Typical Applications</th><th>Available Processes</th><th>Finishes</th><th>Notes</th></tr>
+        <tr><td>PA6 (Nylon)</td><td>Plastic</td><td>Pulleys, bushings, clips, wear parts</td><td>Injection molding</td><td>n/a</td><td>Tough and wear-resistant; absorbs moisture and needs drying before molding</td></tr>
+        <tr><td>ABS</td><td>Plastic</td><td>Enclosures, brackets, handles, hardware</td><td>Injection molding, extrusion</td><td>Paint, texture</td><td>Good impact strength and surface finish</td></tr>
+        <tr><td>PP (Polypropylene)</td><td>Plastic</td><td>Tanks, caps, hinges, chemical-resistant parts</td><td>Injection molding, rotomolding</td><td>n/a</td><td>Lightweight, chemical-resistant, low cost per part</td></tr>
+        <tr><td>PVC</td><td>Plastic</td><td>Window and door profiles, trims, structural sections</td><td>Extrusion</td><td>n/a</td><td>Rigid profiles with tight tolerances, custom lengths</td></tr>
+        <tr><td>EVA / IXPE Foam</td><td>Foam</td><td>Panels, mats, gaskets, packaging, insulation</td><td>Die-cutting</td><td>n/a</td><td>Adhesive-backed options, precision cut shapes</td></tr>
+        <tr><td>Aluminum 6063</td><td>Metal</td><td>Window and door systems, rails, structural profiles</td><td>Extrusion, bending</td><td>Anodizing (natural, black), powder coating, dye</td><td>Excellent for extrusion; the 6063 grade is made for it</td></tr>
+        <tr><td>Zinc Alloys</td><td>Metal</td><td>Die-cast brackets, housings, locks, handles</td><td>Zinc die-casting</td><td>Paint, plating</td><td>Complex shapes with thin walls in one step</td></tr>
+        <tr><td>Carbon &amp; Stainless Steel</td><td>Metal</td><td>Brackets, plates, stamped hardware, frames</td><td>Stamping, bending, laser cutting</td><td>Powder coating</td><td>Strength for structural parts; powder coat protects against rust</td></tr>
+      </table></div>
     </div>
   </section>
 

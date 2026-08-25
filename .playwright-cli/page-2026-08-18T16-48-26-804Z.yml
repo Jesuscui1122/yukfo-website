@@ -1,0 +1,49 @@
+- generic [active] [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - generic [ref=f6e3]:
+      - link "YUKFO logo YUKFO" [ref=f6e4] [cursor=pointer]:
+        - /url: index
+        - img "YUKFO logo" [ref=f6e5]
+        - generic [ref=f6e6]: YUKFO
+      - button "Menu" [ref=f6e7] [cursor=pointer]: ☰
+  - main [ref=f6e8]:
+    - generic [ref=f6e10]:
+      - heading "Service, Done the Right Way" [level=2] [ref=f6e11]
+      - paragraph [ref=f6e12]: Six years in cross-border supply chain, delivering parts and finished products for brand clients overseas.
+      - generic [ref=f6e13]:
+        - generic [ref=f6e14]:
+          - generic [ref=f6e15]: "6"
+          - generic [ref=f6e16]: years in cross-border trade
+        - generic [ref=f6e17]:
+          - generic [ref=f6e18]: "4"
+          - generic [ref=f6e19]: markets served
+        - generic [ref=f6e20]:
+          - generic [ref=f6e21]: "26"
+          - generic [ref=f6e22]: SKUs in one delivered program
+        - generic [ref=f6e23]:
+          - generic [ref=f6e24]: 24h
+          - generic [ref=f6e25]: reply time
+      - paragraph [ref=f6e26]: Yukfo Limited is registered in Hong Kong. The work happens on the ground in the Yangtze River Delta.
+    - generic [ref=f6e28]:
+      - heading "Why YUKFO Exists" [level=2] [ref=f6e29]
+      - paragraph [ref=f6e30]: "The person behind YUKFO spent years on the supply chain's front line, watching how projects really run: information out of sync, opaque processes, miscommunication between buyers and factories, blurry lines of responsibility."
+      - paragraph [ref=f6e31]: "When problems come up, some suppliers dodge or hide, and the risk lands on the overseas buyer: quality nobody follows up on, emails unanswered for days. YUKFO was built to break that pattern: one person pushing the whole project forward, straight to the source, without layers of middlemen."
+    - generic [ref=f6e33]:
+      - heading "Expertise" [level=2] [ref=f6e34]
+      - paragraph [ref=f6e35]: Six years in, I know what each process can and cannot do, what it costs, and the logistics math that decides whether a project lands on time and on budget.
+    - generic [ref=f6e37]:
+      - heading "A Foundation of Trust" [level=2] [ref=f6e38]
+      - paragraph [ref=f6e39]: "The business runs on word of mouth and clients who come back, so every order matters. Without layers of middlemen, goals align with the client's: the right factory, the right price, problems found and resolved early."
+    - generic [ref=f6e41]:
+      - heading "Core Advantage" [level=2] [ref=f6e42]
+      - paragraph [ref=f6e43]: I have built a database of real cost reference data across factories and processes, and every quote is itemized line by line. With first-hand cost data, I can spot unreasonable quotes, so clients pay for what the part actually costs, without unnecessary middleman markup.
+    - generic [ref=f6e45]:
+      - heading "Work With YUKFO" [level=2] [ref=f6e46]
+      - paragraph [ref=f6e47]: No contracts to sign just to ask a question. Send the drawing or idea, and I reply within 24 hours on working days.
+      - link "Send Your Project" [ref=f6e48] [cursor=pointer]:
+        - /url: contact
+  - contentinfo [ref=f6e49]:
+    - generic [ref=f6e50]:
+      - generic [ref=f6e51]: © 2026 YUKFO · Yukfo Limited, Hong Kong
+      - link "jesus@yukfo.com" [ref=f6e53] [cursor=pointer]:
+        - /url: mailto:jesus@yukfo.com

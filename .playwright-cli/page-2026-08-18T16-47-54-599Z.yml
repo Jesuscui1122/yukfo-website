@@ -1,0 +1,137 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "YUKFO logo YUKFO" [ref=e4] [cursor=pointer]:
+        - /url: index
+        - img "YUKFO logo" [ref=e5]
+        - generic [ref=e6]: YUKFO
+      - navigation "Main navigation" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: index
+        - link "Services" [ref=e9] [cursor=pointer]:
+          - /url: services
+        - link "Processes" [ref=e10] [cursor=pointer]:
+          - /url: processes
+        - link "Materials" [ref=e11] [cursor=pointer]:
+          - /url: materials
+        - link "Materials" [ref=e12] [cursor=pointer]:
+          - /url: materials
+        - link "Deliveries" [ref=e13] [cursor=pointer]:
+          - /url: deliveries
+        - link "FAQ" [ref=e14] [cursor=pointer]:
+          - /url: faq
+        - link "About" [ref=e15] [cursor=pointer]:
+          - /url: about
+        - link "Contact" [ref=e16] [cursor=pointer]:
+          - /url: contact
+  - main [ref=e17]:
+    - generic [ref=e19]:
+      - heading "Materials" [level=2] [ref=e20]
+      - paragraph [ref=e21]: The materials behind delivered projects, with the processes and finishes that suit each one. Not sure what to use for your part? Send the drawing or idea and I'll recommend a material and process together.
+      - table [ref=e23]:
+        - rowgroup [ref=e24]:
+          - row [ref=e25]:
+            - columnheader "Material" [ref=e26]
+            - columnheader "Type" [ref=e27]
+            - columnheader "Typical Applications" [ref=e28]
+            - columnheader "Available Processes" [ref=e29]
+            - columnheader "Finishes" [ref=e30]
+            - columnheader "Notes" [ref=e31]
+          - row [ref=e32]:
+            - cell "PA6 (Nylon)" [ref=e33]
+            - cell "Plastic" [ref=e34]
+            - cell "Pulleys, bushings, clips, wear parts" [ref=e35]
+            - cell "Injection molding" [ref=e36]
+            - cell "n/a" [ref=e37]
+            - cell "Tough and wear-resistant; absorbs moisture and needs drying before molding" [ref=e38]
+          - row [ref=e39]:
+            - cell "ABS" [ref=e40]
+            - cell "Plastic" [ref=e41]
+            - cell "Enclosures, brackets, handles, hardware" [ref=e42]
+            - cell "Injection molding, extrusion" [ref=e43]
+            - cell "Paint, texture" [ref=e44]
+            - cell "Good impact strength and surface finish" [ref=e45]
+          - row [ref=e46]:
+            - cell "PP (Polypropylene)" [ref=e47]
+            - cell "Plastic" [ref=e48]
+            - cell "Tanks, caps, hinges, chemical-resistant parts" [ref=e49]
+            - cell "Injection molding, rotomolding" [ref=e50]
+            - cell "n/a" [ref=e51]
+            - cell "Lightweight, chemical-resistant, low cost per part" [ref=e52]
+          - row [ref=e53]:
+            - cell "PVC" [ref=e54]
+            - cell "Plastic" [ref=e55]
+            - cell "Window and door profiles, trims, structural sections" [ref=e56]
+            - cell "Extrusion" [ref=e57]
+            - cell "n/a" [ref=e58]
+            - cell "Rigid profiles with tight tolerances, custom lengths" [ref=e59]
+          - row [ref=e60]:
+            - cell "EVA / IXPE Foam" [ref=e61]
+            - cell "Foam" [ref=e62]
+            - cell "Panels, mats, gaskets, packaging, insulation" [ref=e63]
+            - cell "Die-cutting" [ref=e64]
+            - cell "n/a" [ref=e65]
+            - cell "Adhesive-backed options, precision cut shapes" [ref=e66]
+          - row [ref=e67]:
+            - cell "Aluminum 6063" [ref=e68]
+            - cell "Metal" [ref=e69]
+            - cell "Window and door systems, rails, structural profiles" [ref=e70]
+            - cell "Extrusion, bending" [ref=e71]
+            - cell "Anodizing (natural, black), powder coating, dye" [ref=e72]
+            - cell "Excellent for extrusion; the 6063 grade is made for it" [ref=e73]
+          - row [ref=e74]:
+            - cell "Zinc Alloys" [ref=e75]
+            - cell "Metal" [ref=e76]
+            - cell "Die-cast brackets, housings, locks, handles" [ref=e77]
+            - cell "Zinc die-casting" [ref=e78]
+            - cell "Paint, plating" [ref=e79]
+            - cell "Complex shapes with thin walls in one step" [ref=e80]
+          - row [ref=e81]:
+            - cell "Carbon & Stainless Steel" [ref=e82]
+            - cell "Metal" [ref=e83]
+            - cell "Brackets, plates, stamped hardware, frames" [ref=e84]
+            - cell "Stamping, bending, laser cutting" [ref=e85]
+            - cell "Powder coating" [ref=e86]
+            - cell "Strength for structural parts; powder coat protects against rust" [ref=e87]
+    - generic [ref=e89]:
+      - heading "How Materials and Processes Fit Together" [level=2] [ref=e90]
+      - paragraph [ref=e91]: Each material suits a set of processes and finishes. A 6063 profile gets extruded and anodized. An ABS part gets molded and painted. A foam gasket gets die-cut from a sheet. When a project needs a combination, it is planned as one schedule so nothing waits on anything else.
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - heading "Plastics" [level=4] [ref=e94]
+          - list [ref=e95]:
+            - listitem [ref=e96]: Injection molding
+            - listitem [ref=e97]: Extrusion
+            - listitem [ref=e98]: Rotomolding
+            - listitem [ref=e99]: Foam die-cutting
+        - generic [ref=e100]:
+          - heading "Metals" [level=4] [ref=e101]
+          - list [ref=e102]:
+            - listitem [ref=e103]: Aluminum extrusion
+            - listitem [ref=e104]: Stamping
+            - listitem [ref=e105]: Bending
+            - listitem [ref=e106]: Laser cutting
+            - listitem [ref=e107]: Zinc die-casting
+        - generic [ref=e108]:
+          - heading "Finishes" [level=4] [ref=e109]
+          - list [ref=e110]:
+            - listitem [ref=e111]: Anodizing
+            - listitem [ref=e112]: Powder coating
+            - listitem [ref=e113]: Paint
+            - listitem [ref=e114]: Dye
+        - generic [ref=e115]:
+          - heading "Delivered Together" [level=4] [ref=e116]
+          - list [ref=e117]:
+            - listitem [ref=e118]: One schedule
+            - listitem [ref=e119]: One contact
+            - listitem [ref=e120]: Checked before shipping
+    - generic [ref=e122]:
+      - heading "Not Sure Which Material?" [level=2] [ref=e123]
+      - paragraph [ref=e124]: Send the part description, drawing, or photo. You get a material and process recommendation with the quote, not a lecture.
+      - link "Send Your Project" [ref=e125] [cursor=pointer]:
+        - /url: contact
+  - contentinfo [ref=e126]:
+    - generic [ref=e127]:
+      - generic [ref=e128]: © 2026 YUKFO · Yukfo Limited, Hong Kong
+      - link "jesus@yukfo.com" [ref=e130] [cursor=pointer]:
+        - /url: mailto:jesus@yukfo.com

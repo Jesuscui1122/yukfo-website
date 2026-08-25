@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yukfo Hero 变体对比样片</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', 'Microsoft YaHei', sans-serif; background: #f5f6f8; color: #111; }
+  .topbar { background: #111; color: #fff; padding: 14px 24px; font-size: 13px; letter-spacing: .02em; }
+  .topbar b { color: #e6b83c; }
+  .variant-tag { text-align: center; padding: 34px 20px 8px; font-size: 12px; color: #888; letter-spacing: .08em; text-transform: uppercase; }
+  .variant-tag b { color: #1e3a5f; font-size: 16px; letter-spacing: 0; text-transform: none; margin-right: 10px; }
+  .variant { background: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+  .inner { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+  /* ============ 变体 A：居中 hero（Apple/Linear 式） ============ */
+  .variant-a .hero { text-align: center; padding: 140px 24px 120px; }
+  .variant-a .hero .kicker { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #1e3a5f; font-weight: 600; margin-bottom: 22px; }
+  .variant-a .hero h1 { font-size: clamp(38px, 5.5vw, 60px); font-weight: 700; line-height: 1.12; letter-spacing: -0.02em; max-width: 760px; margin: 0 auto 26px; }
+  .variant-a .hero p { font-size: 18px; color: #555; max-width: 480px; margin: 0 auto 40px; line-height: 1.6; }
+  .variant-a .btn { display: inline-block; background: #1e3a5f; color: #fff; padding: 14px 34px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; transition: transform .15s ease, background .15s; }
+  .variant-a .btn:hover { background: #162d4b; transform: translateY(-1px); }
+
+  /* ============ 变体 B：左对齐 hero（Stripe/Notion 式） ============ */
+  .variant-b .hero { display: flex; align-items: center; gap: 60px; padding: 110px 24px; }
+  .variant-b .hero .left { flex: 1.1; }
+  .variant-b .hero h1 { font-size: clamp(34px, 4.5vw, 52px); font-weight: 700; line-height: 1.12; letter-spacing: -0.02em; margin-bottom: 22px; }
+  .variant-b .hero p { font-size: 17px; color: #555; max-width: 440px; line-height: 1.65; margin-bottom: 34px; }
+  .variant-b .btn { display: inline-block; background: #1e3a5f; color: #fff; padding: 14px 30px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; }
+  .variant-b .hero .right { flex: 1; }
+  .variant-b .hero .right .ph { aspect-ratio: 4/3; background: linear-gradient(135deg, #d8dfe8, #b8c4d4); border-radius: 14px; position: relative; }
+  .variant-b .hero .right .ph::after { content: "你的产品图位"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #1e3a5f; font-size: 14px; opacity: .7; }
+
+  /* ============ 变体 C：大字全屏 + 极简（Phantom/杂志式） ============ */
+  .variant-c .hero { min-height: 88vh; display: flex; flex-direction: column; justify-content: center; padding: 100px 24px; }
+  .variant-c .hero h1 { font-size: clamp(48px, 8vw, 96px); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; max-width: 900px; }
+  .variant-c .hero h1 .accent { color: #1e3a5f; }
+  .variant-c .hero .sub { margin-top: 30px; font-size: 16px; color: #666; max-width: 380px; line-height: 1.6; }
+  .variant-c .hero .meta { margin-top: 60px; font-size: 13px; color: #999; letter-spacing: .05em; }
+
+  /* ============ 变体 D：分栏双列（现代工作室/作品集式） ============ */
+  .variant-d .hero { padding: 100px 24px 80px; }
+  .variant-d .hero h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 26px; max-width: 640px; }
+  .variant-d .hero .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; }
+  .variant-d .hero .col p { color: #555; line-height: 1.7; font-size: 15px; }
+  .variant-d .hero .col b { color: #1e3a5f; }
+  .variant-d .hero .links { margin-top: 42px; display: flex; gap: 28px; }
+  .variant-d .hero .links a { color: #1e3a5f; font-weight: 600; font-size: 15px; text-decoration: none; border-bottom: 1.5px solid #1e3a5f22; padding-bottom: 3px; }
+
+  /* ============ 案例网格（每个变体下方通用示意） ============ */
+  .cases { padding: 70px 24px 90px; }
+  .cases .cap { font-size: 12px; color: #999; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 26px; }
+  .cases .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .cases .cell { aspect-ratio: 4/3; border-radius: 12px; background: #e6e9ee; position: relative; overflow: hidden; transition: transform .25s ease; }
+  .cases .cell:hover { transform: scale(1.02); }
+  .cases .cell .t { position: absolute; left: 14px; bottom: 12px; font-size: 14px; font-weight: 600; color: #1e3a5f; }
+  .cases .cell .tag { position: absolute; right: 12px; top: 10px; font-size: 11px; color: #999; background: #ffffffcc; padding: 3px 8px; border-radius: 6px; }
+  .note { text-align: center; padding: 26px 20px 60px; font-size: 13px; color: #777; max-width: 560px; margin: 0 auto; line-height: 1.7; }
+  .note b { color: #1e3a5f; }
+</style>
+</head>
+<body>
+
+<div class="topbar">YUKFO 改版样片 · <b>4 种现代极简 hero 对比</b> · 只是看布局感觉，不是成品</div>
+
+<!-- ================= 变体 A ================= -->
+<div class="variant-tag"><b>A · 居中 hero</b> Apple / Linear 式 — 大字居中，留白最大，最"安静"</div>
+<div class="variant variant-a">
+  <div class="hero inner">
+    <div class="kicker">Sourcing Agent · Hong Kong</div>
+    <h1>Need something from China? I'm your sourcing agent.</h1>
+    <p>From a single part to a full product line — I find it, verify it, and deliver it.</p>
+    <a class="btn" href="#">Start a project</a>
+  </div>
+  <div class="cases inner">
+    <div class="cap">Recent work — 6 张真实产品图</div>
+    <div class="grid">
+      <div class="cell"><span class="tag">T-Handle Lock</span><span class="t">HUNT 系列</span></div>
+      <div class="cell"><span class="tag">Acrylic Panel</span><span class="t">亚克力板</span></div>
+      <div class="cell"><span class="tag">Camera</span><span class="t">车载摄像头</span></div>
+      <div class="cell"><span class="tag">Float</span><span class="t">滚塑浮体</span></div>
+      <div class="cell"><span class="tag">Extrusion</span><span class="t">铝型材</span></div>
+      <div class="cell"><span class="tag">Crate</span><span class="t">橙子箱</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 变体 B ================= -->
+<div class="variant-tag"><b>B · 左文右图</b> Stripe / Notion 式 — 产品图第一时间可见，动静结合</div>
+<div class="variant variant-b">
+  <div class="hero inner">
+    <div class="left">
+      <h1>Need something from China? I'm your sourcing agent.</h1>
+      <p>From a single part to a full product line — I find it, verify it, and deliver it.</p>
+      <a class="btn" href="#">Start a project</a>
+    </div>
+    <div class="right"><div class="ph"></div></div>
+  </div>
+  <div class="cases inner">
+    <div class="cap">Recent work — 6 张真实产品图</div>
+    <div class="grid">
+      <div class="cell"><span class="tag">T-Handle Lock</span><span class="t">HUNT 系列</span></div>
+      <div class="cell"><span class="tag">Acrylic Panel</span><span class="t">亚克力板</span></div>
+      <div class="cell"><span class="tag">Camera</span><span class="t">车载摄像头</span></div>
+      <div class="cell"><span class="tag">Float</span><span class="t">滚塑浮体</span></div>
+      <div class="cell"><span class="tag">Extrusion</span><span class="t">铝型材</span></div>
+      <div class="cell"><span class="tag">Crate</span><span class="t">橙子箱</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 变体 C ================= -->
+<div class="variant-tag"><b>C · 超大字全屏</b> 杂志/编辑式 — 字最大最冲击，像设计工作室</div>
+<div class="variant variant-c">
+  <div class="hero inner">
+    <h1>Your sourcing<br>agent in <span class="accent">China</span>.</h1>
+    <div class="sub">No category limits. From one part to a full product line — I find it, verify it, and deliver it.</div>
+    <div class="meta">Yukfo Limited · Hong Kong · yukfo.com</div>
+  </div>
+  <div class="cases inner">
+    <div class="cap">Recent work — 6 张真实产品图</div>
+    <div class="grid">
+      <div class="cell"><span class="tag">T-Handle Lock</span><span class="t">HUNT 系列</span></div>
+      <div class="cell"><span class="tag">Acrylic Panel</span><span class="t">亚克力板</span></div>
+      <div class="cell"><span class="tag">Camera</span><span class="t">车载摄像头</span></div>
+      <div class="cell"><span class="tag">Float</span><span class="t">滚塑浮体</span></div>
+      <div class="cell"><span class="tag">Extrusion</span><span class="t">铝型材</span></div>
+      <div class="cell"><span class="tag">Crate</span><span class="t">橙子箱</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= 变体 D ================= -->
+<div class="variant-tag"><b>D · 大字 + 双栏正文</b> 现代工作室式 — 字少但有内容感，客户会认真读</div>
+<div class="variant variant-d">
+  <div class="hero inner">
+    <h1>Your sourcing agent in China — no category limits.</h1>
+    <div class="cols">
+      <div class="col">
+        <p><b>What I do.</b> You need something from China — a part, a product, a supplier you can trust. I find it, verify it, and deliver it.</p>
+      </div>
+      <div class="col">
+        <p><b>How it works.</b> Send me drawings or an idea. I handle sourcing, quality, and shipping — you get one clear quote and regular updates.</p>
+      </div>
+    </div>
+    <div class="links">
+      <a href="#">View my work →</a>
+      <a href="#">Start a project →</a>
+    </div>
+  </div>
+  <div class="cases inner">
+    <div class="cap">Recent work — 6 张真实产品图</div>
+    <div class="grid">
+      <div class="cell"><span class="tag">T-Handle Lock</span><span class="t">HUNT 系列</span></div>
+      <div class="cell"><span class="tag">Acrylic Panel</span><span class="t">亚克力板</span></div>
+      <div class="cell"><span class="tag">Camera</span><span class="t">车载摄像头</span></div>
+      <div class="cell"><span class="tag">Float</span><span class="t">滚塑浮体</span></div>
+      <div class="cell"><span class="tag">Extrusion</span><span class="t">铝型材</span></div>
+      <div class="cell"><span class="tag">Crate</span><span class="t">橙子箱</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="note">这 4 个变体共用同一套"现代感"元素：<b>Inter 字体 · 深蓝 #1e3a5f · 大留白 · 圆角 10px · 图片 hover 微动效</b>。<br>案例区现在是灰块占位，你的真图直接替换。</div>
+
+</body>
+</html>

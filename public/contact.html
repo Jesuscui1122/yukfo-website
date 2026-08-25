@@ -10,6 +10,9 @@
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://yukfo.com/contact">
 <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/main.js" defer></script>
 </head>
@@ -20,10 +23,8 @@
     <nav class="nav" aria-label="Main navigation">
       <a href="index">Home</a>
       <a href="services">Services</a>
-      <a href="processes">Processes</a>
       <a href="deliveries">Deliveries</a>
       <a href="faq">FAQ</a>
-      <a href="about">About</a>
       <a href="contact" class="active">Contact</a>
     </nav>
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
@@ -59,6 +60,10 @@
         <div class="field"><label for="quantity">Quantity</label><input id="quantity" name="Quantity" type="text"></div>
         <div class="field"><label for="target">Target Price (USD)</label><input id="target" name="Target price" type="text"></div>
         <div class="field"><label for="deadline">Delivery Deadline</label><input id="deadline" name="Delivery deadline" type="text"></div>
+        <div style="grid-column:1/-1" class="upload-note"><b>Drawings or files?</b> Attach them here: STEP, STP, IGES, IGS, STL, DXF, DWG, PDF, or ZIP.
+          <div class="upload-formats"><span>STEP / STP</span><span>IGES / IGS</span><span>STL</span><span>DXF / DWG</span><span>PDF</span><span>ZIP</span></div>
+        </div>
+        <div class="field" style="grid-column:1/-1"><label for="files">File Attachments</label><input id="files" name="File attachment" type="file" multiple accept=".step,.stp,.iges,.igs,.stl,.dxf,.dwg,.pdf,.zip"></div>
         <div style="grid-column:1/-1"><button class="btn" type="submit">Send Inquiry</button></div>
       </form>
     </div>

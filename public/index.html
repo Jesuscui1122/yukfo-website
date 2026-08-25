@@ -10,6 +10,9 @@
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://yukfo.com/">
 <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/main.js" defer></script>
 </head>
@@ -20,10 +23,8 @@
     <nav class="nav" aria-label="Main navigation">
       <a href="index" class="active">Home</a>
       <a href="services">Services</a>
-      <a href="processes">Processes</a>
       <a href="deliveries">Deliveries</a>
       <a href="faq">FAQ</a>
-      <a href="about">About</a>
       <a href="contact">Contact</a>
     </nav>
     <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
@@ -37,12 +38,15 @@
       <p class="sub">Parts, goods, tools, or hard-to-find items: found, checked, shipped. One contact from drawing to delivery.</p>
       <a class="btn" href="contact">Send Your Project</a>
       <a class="btn btn-ghost" href="services" style="margin-left:10px">See What I Do</a>
+      <a class="btn btn-ghost" href="https://wa.me/8617860570306" target="_blank" rel="noopener" style="margin-left:10px">WhatsApp: Quick Question</a>
       <div class="hero-stats">
         <div class="hero-stat"><div class="num">6</div><div class="lbl">years in cross-border trade</div></div>
         <div class="hero-stat"><div class="num">4</div><div class="lbl">markets served</div></div>
         <div class="hero-stat"><div class="num">26</div><div class="lbl">SKUs in one delivered program</div></div>
         <div class="hero-stat"><div class="num">24h</div><div class="lbl">reply time</div></div>
       </div>
+      <!-- 占位：BR No. 12345678 待替换为真实号（候选 80477500，2026-08-23 第三方目录验证，需用户注册证书核验） -->
+      <p style="margin-top:16px;color:var(--gray);font-size:.8rem">Yukfo Limited · Hong Kong · BR No. 12345678</p>
     </div>
   </section>
 
@@ -61,15 +65,14 @@
   <section class="section">
     <div class="container">
       <h2>What I Do</h2>
-      <p class="lead">Five processes I work with, and the industries they serve.</p>
-      <div class="grid">
-        <div class="card"><h3>Injection Molding</h3><p>Precision parts in PA6, ABS, PP, from small pulleys to complex enclosures.</p></div>
-        <div class="card"><h3>Rotational Molding</h3><p>Large hollow parts: kayaks, coolers, tanks, planters.</p></div>
-        <div class="card"><h3>Plastic Extrusion</h3><p>PVC and ABS profiles for windows, doors, and structural trims, with tight tolerances and custom lengths.</p></div>
-        <div class="card"><h3>Foam Die-Cutting</h3><p>EVA/IXPE foam panels, mats, and gaskets for flooring, insulation, and packaging.</p></div>
-        <div class="card"><h3>Metal Fabrication</h3><p>Stamping, bending, laser cutting, die-casting, and powder coating for brackets, plates, handles, and locks.</p></div>
+      <p class="lead">The manufacturing processes I work with, through partner factories, with the materials that suit each one.</p>
+      <div class="matrix">
+        <div class="cell"><h4><a href="services">Plastics</a></h4><ul><li>Injection molding</li><li>Rotational molding</li><li>Plastic extrusion</li></ul></div>
+        <div class="cell"><h4><a href="services">Metals</a></h4><ul><li>Aluminum extrusion</li><li>Stamping</li><li>Bending</li><li>Laser cutting</li><li>Zinc die-casting</li></ul></div>
+        <div class="cell"><h4><a href="services">Foam &amp; Board</a></h4><ul><li>EVA/IXPE die-cutting</li><li>Acrylic panels</li></ul></div>
+        <div class="cell"><h4><a href="services">Finishes</a></h4><ul><li>Anodizing</li><li>Powder coating</li><li>Dye</li></ul></div>
       </div>
-      <a class="btn btn-ghost" href="processes" style="margin-top:24px">See All Processes</a>
+      <a class="btn btn-ghost" href="services" style="margin-top:24px">See All Processes &amp; Materials</a>
     </div>
   </section>
 
@@ -89,7 +92,7 @@
       <h2>Why a One-Person Partner?</h2>
       <p class="lead">I live on repeat orders and referrals. That means the right factory, a fair cost, and clear expectations on every order.</p>
       <p class="lead">Finding a factory is the easy part. The work is in comparing quotes, checking samples, chasing schedules, and catching problems before they ship. That work is what a sourcing agent is for: one contact who answers for the whole chain, with itemized quotes so you see the cost of each step.</p>
-      <a class="btn" href="about">Meet the Person Behind YUKFO</a>
+      <a class="btn" href="faq">Why YUKFO?</a>
     </div>
   </section>
 </main>

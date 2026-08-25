@@ -1,0 +1,111 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "YUKFO logo YUKFO" [ref=f1e4] [cursor=pointer]:
+        - /url: index
+        - img "YUKFO logo" [ref=f1e5]
+        - generic [ref=f1e6]: YUKFO
+      - button "Menu" [ref=f1e7] [cursor=pointer]: ☰
+  - main [ref=f1e8]:
+    - generic [ref=f1e10]:
+      - heading "Need something from China? I'm your sourcing agent. No category limits." [level=1] [ref=f1e11]
+      - paragraph [ref=f1e12]: "Parts, goods, tools, or hard-to-find items: found, checked, shipped. One contact from drawing to delivery."
+      - link "Send Your Project" [ref=f1e13] [cursor=pointer]:
+        - /url: contact
+      - link "See What I Do" [ref=f1e14] [cursor=pointer]:
+        - /url: services
+      - generic [ref=f1e15]:
+        - generic [ref=f1e16]:
+          - generic [ref=f1e17]: "6"
+          - generic [ref=f1e18]: years in cross-border trade
+        - generic [ref=f1e19]:
+          - generic [ref=f1e20]: "4"
+          - generic [ref=f1e21]: markets served
+        - generic [ref=f1e22]:
+          - generic [ref=f1e23]: "26"
+          - generic [ref=f1e24]: SKUs in one delivered program
+        - generic [ref=f1e25]:
+          - generic [ref=f1e26]: 24h
+          - generic [ref=f1e27]: reply time
+    - generic [ref=f1e29]:
+      - heading "How I Help" [level=2] [ref=f1e30]
+      - paragraph [ref=f1e31]: Three ways to work with me. A drawing or a rough idea is all it takes. Most projects start with a sample or a trial run, then move into production.
+      - generic [ref=f1e32]:
+        - generic [ref=f1e33]:
+          - generic [ref=f1e34]: Product Sourcing
+          - heading "Anything You Need" [level=3] [ref=f1e35]
+          - paragraph [ref=f1e36]: "You need it, I find it: parts, finished goods, tools, hardware. Factories compared, samples checked before your money moves, export paperwork done."
+        - generic [ref=f1e37]:
+          - generic [ref=f1e38]: Custom Manufacturing
+          - heading "Parts Made to Order" [level=3] [ref=f1e39]
+          - paragraph [ref=f1e40]: Injection molding, rotomolding, extrusion, foam, metal. Made in partner factories. Samples approved before production.
+        - generic [ref=f1e41]:
+          - generic [ref=f1e42]: Turnkey Delivery
+          - heading "Project Management" [level=3] [ref=f1e43]
+          - paragraph [ref=f1e44]: "Sourcing, prototyping, production, QC, documents, shipping: end to end, all of it. One contact: me."
+    - generic [ref=f1e46]:
+      - heading "What I Do" [level=2] [ref=f1e47]
+      - paragraph [ref=f1e48]: The manufacturing processes I work with, through partner factories, with the materials that suit each one.
+      - generic [ref=f1e49]:
+        - generic [ref=f1e50]:
+          - heading [level=4] [ref=f1e51]:
+            - link "Plastics" [ref=f1e52] [cursor=pointer]:
+              - /url: processes
+          - list [ref=f1e53]:
+            - listitem [ref=f1e54]: Injection molding
+            - listitem [ref=f1e55]: Rotational molding
+            - listitem [ref=f1e56]: Plastic extrusion
+        - generic [ref=f1e57]:
+          - heading [level=4] [ref=f1e58]:
+            - link "Metals" [ref=f1e59] [cursor=pointer]:
+              - /url: processes
+          - list [ref=f1e60]:
+            - listitem [ref=f1e61]: Aluminum extrusion
+            - listitem [ref=f1e62]: Stamping
+            - listitem [ref=f1e63]: Bending
+            - listitem [ref=f1e64]: Laser cutting
+            - listitem [ref=f1e65]: Zinc die-casting
+        - generic [ref=f1e66]:
+          - heading [level=4] [ref=f1e67]:
+            - link "Foam & Board" [ref=f1e68] [cursor=pointer]:
+              - /url: processes
+          - list [ref=f1e69]:
+            - listitem [ref=f1e70]: EVA/IXPE die-cutting
+            - listitem [ref=f1e71]: Acrylic panels
+        - generic [ref=f1e72]:
+          - heading [level=4] [ref=f1e73]:
+            - link "Finishes" [ref=f1e74] [cursor=pointer]:
+              - /url: materials
+          - list [ref=f1e75]:
+            - listitem [ref=f1e76]: Anodizing
+            - listitem [ref=f1e77]: Powder coating
+            - listitem [ref=f1e78]: Dye
+      - link "See All Processes" [ref=f1e79] [cursor=pointer]:
+        - /url: processes
+    - generic [ref=f1e81]:
+      - heading "Real Products, Delivered" [level=2] [ref=f1e82]
+      - paragraph [ref=f1e83]: "Parts from a delivered blind-system program: injection-molded hardware and cut acrylic panels."
+      - generic [ref=f1e84]:
+        - generic [ref=f1e85]:
+          - img "T-handle locks with keys" [ref=f1e86]
+          - generic [ref=f1e87]:
+            - text: BLIND SYSTEM
+            - heading "T-Handle Locks" [level=3] [ref=f1e88]
+            - paragraph [ref=f1e89]: Molded hardware with keys, part of a 26-SKU program delivered as one project.
+        - generic [ref=f1e90]:
+          - img "Clear acrylic panels" [ref=f1e91]
+          - generic [ref=f1e92]:
+            - text: BLIND SYSTEM
+            - heading "Acrylic Panels" [level=3] [ref=f1e93]
+            - paragraph [ref=f1e94]: Cut and polished panels, part of the same 26-SKU program.
+    - generic [ref=f1e96]:
+      - heading "Why a One-Person Partner?" [level=2] [ref=f1e97]
+      - paragraph [ref=f1e98]: I live on repeat orders and referrals. That means the right factory, a fair cost, and clear expectations on every order.
+      - paragraph [ref=f1e99]: "Finding a factory is the easy part. The work is in comparing quotes, checking samples, chasing schedules, and catching problems before they ship. That work is what a sourcing agent is for: one contact who answers for the whole chain, with itemized quotes so you see the cost of each step."
+      - link "Meet the Person Behind YUKFO" [ref=f1e100] [cursor=pointer]:
+        - /url: about
+  - contentinfo [ref=f1e101]:
+    - generic [ref=f1e102]:
+      - generic [ref=f1e103]: © 2026 YUKFO · Yukfo Limited, Hong Kong
+      - link "jesus@yukfo.com" [ref=f1e105] [cursor=pointer]:
+        - /url: mailto:jesus@yukfo.com

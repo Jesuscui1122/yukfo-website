@@ -1,0 +1,70 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - link "YUKFO logo YUKFO" [ref=f4e4] [cursor=pointer]:
+        - /url: index
+        - img "YUKFO logo" [ref=f4e5]
+        - generic [ref=f4e6]: YUKFO
+      - button "Menu" [ref=f4e7] [cursor=pointer]: ☰
+  - main [ref=f4e8]:
+    - generic [ref=f4e10]:
+      - heading "Contact" [level=2] [ref=f4e11]
+      - paragraph [ref=f4e12]: Send your drawing, idea, or question. I reply within 24 hours on working days.
+      - generic [ref=f4e13]: "Tip: include quantity, target price if you have one, and delivery date. Have drawings or specs? Mention them and I'll share a secure way to send files."
+      - generic [ref=f4e14]:
+        - generic [ref=f4e15]:
+          - heading "Email" [level=3] [ref=f4e16]
+          - paragraph [ref=f4e17]:
+            - link "jesus@yukfo.com" [ref=f4e18] [cursor=pointer]:
+              - /url: mailto:jesus@yukfo.com
+            - text: Best for drawings, specs and formal inquiries.
+        - generic [ref=f4e19]:
+          - heading "WhatsApp" [level=3] [ref=f4e20]
+          - paragraph [ref=f4e21]:
+            - link "+86 178 6057 0306" [ref=f4e22] [cursor=pointer]:
+              - /url: https://wa.me/8617860570306
+            - text: Best for quick questions and sending photos of your part.
+        - generic [ref=f4e23]:
+          - heading "Response Time" [level=3] [ref=f4e24]
+          - paragraph [ref=f4e25]: Direct answers, within 24 hours on working days.
+    - generic [ref=f4e28]:
+      - generic [ref=f4e29]:
+        - generic [ref=f4e30]: Name *
+        - textbox "Name *" [ref=f4e31]
+      - generic [ref=f4e32]:
+        - generic [ref=f4e33]: Email *
+        - textbox "Email *" [ref=f4e34]
+      - generic [ref=f4e35]:
+        - generic [ref=f4e36]: Company
+        - textbox "Company" [ref=f4e37]
+      - generic [ref=f4e38]:
+        - generic [ref=f4e39]: Product / Part Description *
+        - textbox "Product / Part Description *" [ref=f4e40]:
+          - /placeholder: What are we making? Material, size, quantity...
+      - generic [ref=f4e41]:
+        - generic [ref=f4e42]: Quantity
+        - textbox "Quantity" [ref=f4e43]
+      - generic [ref=f4e44]:
+        - generic [ref=f4e45]: Target Price (USD)
+        - textbox "Target Price (USD)" [ref=f4e46]
+      - generic [ref=f4e47]:
+        - generic [ref=f4e48]: Delivery Deadline
+        - textbox "Delivery Deadline" [ref=f4e49]
+      - generic [ref=f4e50]:
+        - text: "Drawings or files? Attach them here: STEP, STP, IGES, IGS, STL, DXF, DWG, PDF, or ZIP."
+        - generic [ref=f4e51]:
+          - generic [ref=f4e52]: STEP / STP
+          - generic [ref=f4e53]: IGES / IGS
+          - generic [ref=f4e54]: STL
+          - generic [ref=f4e55]: DXF / DWG
+          - generic [ref=f4e56]: PDF
+          - generic [ref=f4e57]: ZIP
+      - generic [ref=f4e58]:
+        - generic [ref=f4e59]: File Attachments
+        - button "File Attachments" [ref=f4e60]
+      - button "Send Inquiry" [ref=f4e62]
+  - contentinfo [ref=f4e63]:
+    - generic [ref=f4e64]:
+      - generic [ref=f4e65]: © 2026 YUKFO · Yukfo Limited, Hong Kong
+      - link "jesus@yukfo.com" [ref=f4e67] [cursor=pointer]:
+        - /url: mailto:jesus@yukfo.com

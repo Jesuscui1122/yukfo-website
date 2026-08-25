@@ -1,0 +1,73 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "YUKFO logo YUKFO" [ref=f3e4] [cursor=pointer]:
+        - /url: index
+        - img "YUKFO logo" [ref=f3e5]
+        - generic [ref=f3e6]: YUKFO
+      - button "Menu" [ref=f3e7] [cursor=pointer]: ☰
+  - main [ref=f3e8]:
+    - generic [ref=f3e10]:
+      - heading "Deliveries" [level=2] [ref=f3e11]
+      - paragraph [ref=f3e12]: Real projects, delivered to clients overseas. Client names stay confidential.
+      - generic [ref=f3e14]:
+        - heading "Water Sports & Marine" [level=3] [ref=f3e15]
+        - paragraph [ref=f3e16]: Rotomolded kayaks, paddles, and marine accessories for kayak brands overseas, from mold development to delivery.
+        - generic [ref=f3e17]:
+          - generic [ref=f3e18]: "Part: kayaks, paddles, marine accessories"
+          - generic [ref=f3e19]: "Material: LLDPE"
+          - generic [ref=f3e20]: "Process: rotomolding, mold development"
+          - generic [ref=f3e21]: "Client: kayak brands overseas"
+        - text: Rotomolding · Mold Development
+      - generic [ref=f3e22]:
+        - generic [ref=f3e23]:
+          - img "Clear acrylic panels" [ref=f3e24]
+          - img "Hinges" [ref=f3e25]
+          - img "T-handle locks with keys" [ref=f3e26]
+          - img "Round vent covers" [ref=f3e27]
+          - img "Extruded main vertical profile (drawing)" [ref=f3e28]
+          - img "Corner bracket (drawing)" [ref=f3e29]
+        - generic [ref=f3e30]:
+          - heading "Outdoor & Hunting" [level=3] [ref=f3e31]
+          - paragraph [ref=f3e32]: "A complete prefabricated blind system delivered as one program: 26 SKUs of extruded profiles, acrylic panels, injection-molded hardware, stamped steel, and EVA foam, engineered, produced, checked, and shipped together."
+          - generic [ref=f3e33]:
+            - generic [ref=f3e34]: "Part: 26-SKU prefabricated blind system"
+            - generic [ref=f3e35]: "Material: acrylic, molded plastics, steel, EVA foam"
+            - generic [ref=f3e36]: "Process: extrusion, injection molding, stamping, foam die-cutting"
+            - generic [ref=f3e37]: "Quantity: 26 SKUs, one program"
+            - generic [ref=f3e38]: "Result: engineered, produced, checked, shipped together"
+          - text: Extrusion · Injection Molding · Stamping · Foam
+      - generic [ref=f3e39]:
+        - img "Aluminium extrusion profile" [ref=f3e40]
+        - generic [ref=f3e41]:
+          - heading "Home & Building" [level=3] [ref=f3e42]
+          - paragraph [ref=f3e43]: Window and door profiles with hardware, water tanks, planters, and EVA/IXPE foam panels, in custom sizes and finishes per project.
+          - generic [ref=f3e44]:
+            - generic [ref=f3e45]: "Part: extruded profiles, tanks, planters, foam panels"
+            - generic [ref=f3e46]: "Material: aluminum 6063, PVC, LLDPE, EVA/IXPE"
+            - generic [ref=f3e47]: "Process: aluminum and plastic extrusion, rotomolding, foam die-cutting"
+            - generic [ref=f3e48]: "Finish: anodizing"
+            - generic [ref=f3e49]: "Result: custom sizes and finishes per project"
+          - text: Extrusion · Rotomolding · Foam Die-Cutting
+      - generic [ref=f3e50]:
+        - generic [ref=f3e51]:
+          - img "Compact camera with ON/OFF and MODE buttons" [ref=f3e52]
+          - img "4-key light switch panel" [ref=f3e53]
+        - generic [ref=f3e54]:
+          - heading "Project Parts" [level=3] [ref=f3e55]
+          - paragraph [ref=f3e56]: Ready-made or custom parts, sourced, assembled, and tested before shipping.
+          - generic [ref=f3e57]:
+            - generic [ref=f3e58]: "Part: camera modules, switch panels, project components"
+            - generic [ref=f3e59]: "Process: sourcing, assembly, testing"
+            - generic [ref=f3e60]: "Result: checked and tested before shipping"
+          - text: Assembly · Sourcing
+    - generic [ref=f3e62]:
+      - heading "Start a New Project" [level=2] [ref=f3e63]
+      - paragraph [ref=f3e64]: Every delivery above started with a drawing and a question. Send yours.
+      - link "Start Your Project" [ref=f3e65] [cursor=pointer]:
+        - /url: contact
+  - contentinfo [ref=f3e66]:
+    - generic [ref=f3e67]:
+      - generic [ref=f3e68]: © 2026 YUKFO · Yukfo Limited, Hong Kong
+      - link "jesus@yukfo.com" [ref=f3e70] [cursor=pointer]:
+        - /url: mailto:jesus@yukfo.com
