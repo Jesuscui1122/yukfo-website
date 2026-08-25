@@ -21,6 +21,7 @@ document.addEventListener('click', function(e){
     box.querySelector('.lb-close').addEventListener('click', function(){ box.classList.remove('open'); });
   }
   box.querySelector('img').src = card.getAttribute('data-img');
+  box.querySelector('img').alt = card.querySelector('img').alt;
   box.classList.add('open');
 });
 document.addEventListener('keydown', function(e){
