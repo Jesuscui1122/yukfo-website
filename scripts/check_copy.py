@@ -3,7 +3,7 @@
 """yukfo.com 文案铁律校验器（stdlib only）。
 用法:
   python -X utf8 scripts/check_copy.py              # 全站检查（根目录 *.html）
-  python -X utf8 scripts/check_copy.py --page about # 单页检查
+  python -X utf8 scripts/check_copy.py --page work  # 单页检查
 硬失败(退出码1): 违禁词 / 正文破折号 / href 双引号 / 必备事实缺失
 警告(退出码0): 绝对化词(人工判断) / 词数带
 """
@@ -20,7 +20,7 @@ MUST_KEEP = {
 }
 BASELINE_WORDS = {'index': 78, 'services': 558, 'work': 168, 'contact': 508}
 PAGE_BAND = (0.70, 1.10)   # 上界放宽：v3.1 信任包（hero 数字条/实体锚点/表单隐藏字段）有意新增少量词
-TOTAL_BAND = (0.70, 1.10)  # 上界放宽：8/23 页数缩减 8→5，processes/materials 并入 services 后全站词数结构性增长
+TOTAL_BAND = (0.70, 1.10)  # 上界放宽：8/25 改版 5→4 页，词数结构性下降后重校
 
 def raw(page):
     return open(os.path.join(ROOT, page + '.html'), encoding='utf-8').read()
