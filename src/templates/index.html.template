@@ -3,22 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YUKFO — China Sourcing Partner for Custom Products</title>
-<meta name="description" content="China sourcing partner for small businesses and independent brands. One contact handles supplier selection, production coordination, quality control and delivery, end to end.">
-<meta property="og:title" content="YUKFO — China Sourcing Partner for Custom Products">
-<meta property="og:description" content="One contact for your China sourcing: supplier selection, production coordination, quality control and delivery.">
+<title>{{title}}</title>
+<meta name="description" content="{{meta_description}}">
+<meta property="og:title" content="{{og_title}}">
+<meta property="og:description" content="{{og_description}}">
 <meta property="og:type" content="website">
-<link rel="canonical" href="https://yukfo.com/">
+<link rel="canonical" href="{{canonical}}">
 <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/main.js" defer></script>
-<link rel="alternate" hreflang="en-us" href="https://us.yukfo.com/" />
-<link rel="alternate" hreflang="en-gb" href="https://uk.yukfo.com/" />
-<link rel="alternate" hreflang="de-de" href="https://eu.yukfo.com/" />
-<link rel="alternate" hreflang="x-default" href="https://yukfo.com/" />
+{{hreflang_block}}
+{{schema_block}}
 </head>
 <body>
 <header class="site-header">
@@ -38,13 +36,28 @@
   <section class="hero-split">
     <div class="container">
       <div class="hero-text">
-        <h1>Need something from China? I'm your sourcing agent. <span style="color:var(--gold-deep)">No category limits.</span></h1>
-        <p class="sub">From a single part to a full product line. I find it, verify it, and deliver it.</p>
-        <a class="btn" href="contact">Start a Project</a>
+        <h1>{{hero_h1}} <span style="color:var(--gold-deep)">{{hero_h1_accent}}</span></h1>
+        <p class="sub">{{hero_sub}}</p>
+        <a class="btn" href="contact">{{cta_primary}}</a>
+        <a class="btn btn-ghost" href="contact" style="margin-left:10px">{{cta_secondary}}</a>
+        <p style="margin-top:16px;color:var(--gray);font-size:.82rem">Reply within 24 hours on working days.</p>
         <!-- BR No. 待核验证书后加回（候选 80477500）：缺信息比假信息安全 -->
-        <p style="margin-top:18px;color:var(--gray);font-size:.82rem">Yukfo Limited · Hong Kong</p>
+        <p style="margin-top:6px;color:var(--gray);font-size:.82rem">Yukfo Limited · Hong Kong</p>
       </div>
       <div class="hero-img"><img src="assets/images/work/work-plastic-parts.jpg" alt="Colored plastic parts from a delivered project"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>How It Works</h2>
+      <p class="lead">Tell me what you need. From there, one person coordinates the whole process.</p>
+      <div class="flow">
+        <div class="step"><div class="n">01</div><div class="t">Send your product idea or specifications</div><div class="d">A drawing, a spec, or a rough idea is all it takes.</div></div>
+        <div class="step"><div class="n">02</div><div class="t">I find suitable suppliers and coordinate the process</div><div class="d">Quotes compared, samples verified, production followed up.</div></div>
+        <div class="step"><div class="n">03</div><div class="t">Samples, quality checks and delivery are managed through one contact</div><div class="d">One person answers for the whole process.</div></div>
+      </div>
+      <p style="margin-top:26px"><a class="btn" href="contact">Start a Project</a></p>
     </div>
   </section>
 

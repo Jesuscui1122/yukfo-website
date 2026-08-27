@@ -3,22 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Send Your Project | YUKFO</title>
-<meta name="description" content="Send your drawing or idea to YUKFO. Reply within 24 hours on working days. Custom manufacturing, product sourcing, and project delivery.">
-<meta property="og:title" content="Contact — YUKFO">
-<meta property="og:description" content="Send your drawing or idea — reply within 24 hours on working days.">
+<title>{{title}}</title>
+<meta name="description" content="{{meta_description}}">
+<meta property="og:title" content="{{og_title}}">
+<meta property="og:description" content="{{og_description}}">
 <meta property="og:type" content="website">
-<link rel="canonical" href="https://yukfo.com/contact">
+<link rel="canonical" href="{{canonical}}">
 <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/main.js" defer></script>
-<link rel="alternate" hreflang="en-us" href="https://us.yukfo.com/contact" />
-<link rel="alternate" hreflang="en-gb" href="https://uk.yukfo.com/contact" />
-<link rel="alternate" hreflang="de-de" href="https://eu.yukfo.com/contact" />
-<link rel="alternate" hreflang="x-default" href="https://yukfo.com/contact" />
+{{hreflang_block}}
+{{schema_block}}
 </head>
 <body>
 <header class="site-header">
@@ -70,14 +68,7 @@
   <section class="section">
     <div class="container">
       <h2>Common Questions</h2>
-      <details class="faq-item"><summary>Who is YUKFO?</summary><p>YUKFO is me, a sourcing and manufacturing partner with six years on the front line of cross-border supply chains. No layers of middlemen: one person pushes the whole project forward, straight to the source. The business runs on word of mouth and clients who come back, so every order matters.</p></details>
-      <details class="faq-item"><summary>Are you a factory?</summary><p>No, I don't own factories. I work with partner factories and manage the sourcing process directly for clients, with each supplier picked for the project and checked at each stage. Yukfo Limited is registered in Hong Kong, and the work happens on the ground in the Yangtze River Delta. You deal with one accountable person, not a chain of contacts.</p></details>
-      <details class="faq-item"><summary>How do you keep pricing transparent?</summary><p>Every quote is itemized line by line: materials, tooling, processing, finishing, logistics. I work from a database of real cost data across factories and processes, so unreasonable quotes stand out and you pay for what the part actually costs, without middleman markup.</p></details>
-      <details class="faq-item"><summary>What is your minimum order quantity (MOQ)?</summary><p>It varies by product and by supplier. Tell me your quantity and I'll confirm the MOQ and price together.</p></details>
-      <details class="faq-item"><summary>How long does production take?</summary><p>It depends on the supplier and the process. Every quote comes with a dated schedule, and the shipping time is quoted right next to it.</p></details>
-      <details class="faq-item"><summary>What payment methods do you accept?</summary><p>Bank transfer (T/T): 30% deposit to start production, 70% before shipment. Payments go to Yukfo Limited (Hong Kong). Sample costs are charged separately and deducted from your first production order. Repeat orders can negotiate different terms.</p></details>
-      <details class="faq-item"><summary>Do you charge for samples?</summary><p>Small parts: I often cover the sample cost or charge only the cost price. Large parts (molds, rotomolded items) carry a sample/mold fee, credited back when you place a production order. I'll share the number up front.</p></details>
-      <details class="faq-item"><summary>What happens if there is a quality problem?</summary><p>Problems are handled where they show up. If a sample fails, it goes back to the supplier with photos and measurements before anything continues. If inspection catches something mid-production, the fix is agreed before the next batch runs. Everything is documented with photos and test results, so there is a record of what was found and what was done about it.</p></details>
+      {{faq_list}}
     </div>
   </section>
 </main>

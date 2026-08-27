@@ -1,0 +1,109 @@
+{
+  "market": "us",
+  "area_served": "United States",
+  "pages": {
+    "index": {
+      "title": "YUKFO — China Sourcing Partner for US Businesses",
+      "meta_description": "Sourcing products from China without a China team? One contact manages supplier search, communication, quality checks and delivery for US small businesses and independent brands.",
+      "og_title": "YUKFO — China Sourcing Partner for US Businesses",
+      "og_description": "One contact for your China sourcing: supplier search, communication, quality checks and delivery.",
+      "canonical": "https://us.yukfo.com/",
+      "hreflang": {
+        "en-us": "https://us.yukfo.com/",
+        "en-gb": "https://uk.yukfo.com/",
+        "en": "https://eu.yukfo.com/",
+        "x-default": "https://yukfo.com/"
+      },
+      "hero_h1": "Need something from China?",
+      "hero_h1_accent": "I manage your sourcing process from supplier search to delivery.",
+      "hero_sub": "I coordinate supplier search, communication, quality checks and delivery, so you can focus on your product.",
+      "cta_primary": "Start Sourcing",
+      "cta_secondary": "Get an Itemized Quote"
+    },
+    "services": {
+      "title": "Sourcing Services — Suppliers, Production Coordination | YUKFO",
+      "meta_description": "China sourcing for US small businesses: supplier selection, production coordination, quality checks and delivery, managed through partner factories. One contact, end to end.",
+      "og_title": "Services — YUKFO",
+      "og_description": "Supplier selection, production coordination, quality control and delivery. One partner from drawings to delivered goods.",
+      "canonical": "https://us.yukfo.com/services",
+      "hreflang": {
+        "en-us": "https://us.yukfo.com/services",
+        "en-gb": "https://uk.yukfo.com/services",
+        "en": "https://eu.yukfo.com/services",
+        "x-default": "https://yukfo.com/services"
+      }
+    },
+    "work": {
+      "title": "Work — Real Products, Delivered | YUKFO",
+      "meta_description": "Real projects delivered by YUKFO: injection molded parts, precision metal parts, rotomolded kayaks, blind systems, extruded profiles, and more. Photos of real work, shipped to clients overseas.",
+      "og_title": "Work — YUKFO",
+      "og_description": "Real projects, delivered. Photos of actual parts and products shipped to clients overseas.",
+      "canonical": "https://us.yukfo.com/work",
+      "hreflang": {
+        "en-us": "https://us.yukfo.com/work",
+        "en-gb": "https://uk.yukfo.com/work",
+        "en": "https://eu.yukfo.com/work",
+        "x-default": "https://yukfo.com/work"
+      }
+    },
+    "contact": {
+      "title": "Contact — Send Your Project | YUKFO",
+      "meta_description": "Send your drawing or idea to YUKFO. Reply within 24 hours on working days. Product sourcing, production coordination, and project delivery.",
+      "og_title": "Contact — YUKFO",
+      "og_description": "Send your drawing or idea — reply within 24 hours on working days.",
+      "canonical": "https://us.yukfo.com/contact",
+      "hreflang": {
+        "en-us": "https://us.yukfo.com/contact",
+        "en-gb": "https://uk.yukfo.com/contact",
+        "en": "https://eu.yukfo.com/contact",
+        "x-default": "https://yukfo.com/contact"
+      },
+      "faq": [
+        {
+          "q": "Who is YUKFO?",
+          "a": "YUKFO is me, a sourcing partner with six years on the front line of cross-border supply chains. No layers of middlemen: one person pushes the whole project forward, straight to the source. The business runs on word of mouth and clients who come back, so every order matters."
+        },
+        {
+          "q": "Are you a factory?",
+          "a": "No, I don't own factories. I work with partner factories and manage the sourcing process directly for clients, with each supplier picked for the project and checked at each stage. Yukfo Limited is registered in Hong Kong, and the work happens on the ground in the Yangtze River Delta. You deal with one accountable person, not a chain of contacts."
+        },
+        {
+          "q": "How do you keep pricing transparent?",
+          "a": "Every quote is itemized line by line: materials, tooling, processing, finishing, logistics. I work from a database of real cost data across factories and processes, so unreasonable quotes stand out and you pay for what the part actually costs, without middleman markup."
+        },
+        {
+          "q": "Do I need a China team or office?",
+          "a": "No. That is my role. I'm on the ground in China, and you deal with one person."
+        },
+        {
+          "q": "How do you handle communication and time zones?",
+          "a": "Direct email and WhatsApp, replies within 24 hours on working days. Time zones are my problem, not yours."
+        },
+        {
+          "q": "What is your minimum order quantity (MOQ)?",
+          "a": "It varies by product and by supplier. Tell me your quantity and I'll confirm the MOQ and price together."
+        },
+        {
+          "q": "How long does production take?",
+          "a": "It depends on the supplier and the process. Every quote comes with a dated schedule, and the shipping time is quoted right next to it."
+        },
+        {
+          "q": "What payment methods do you accept?",
+          "a": "Bank transfer (T/T): 30% deposit to start production, 70% before shipment. Payments go to Yukfo Limited (Hong Kong). Sample costs are charged separately and deducted from your first production order. Repeat orders can negotiate different terms."
+        },
+        {
+          "q": "Do you charge for samples?",
+          "a": "Small parts: I often cover the sample cost or charge only the cost price. Large parts (molds, rotomolded items) carry a sample/mold fee, credited back when you place a production order. I'll share the number up front."
+        },
+        {
+          "q": "What happens if there is a quality problem?",
+          "a": "Problems are handled where they show up. If a sample fails, it goes back to the supplier with photos and measurements before anything continues. If inspection catches something mid-production, the fix is agreed before the next batch runs. Everything is documented with photos and test results, so there is a record of what was found and what was done about it."
+        }
+      ]
+    },
+    "thanks": {
+      "title": "Message Received — YUKFO",
+      "og_title": "Message Received — YUKFO"
+    }
+  }
+}

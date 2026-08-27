@@ -3,3 +3,7 @@ node_modules/
 *.log
 .claude/scheduled_tasks.lock
 .playwright-cli/
+
+# build output & backups (2026-08-27 GEO architecture)
+dist/
+backups/

@@ -10,6 +10,7 @@
 import re, sys, html, glob, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = ROOT  # 默认检查仓库根；--dir <sub> 时检查 ROOT/<sub>
 HARD_WORDS = ['trusted', 'my own production', 'own factory', "i've shipped", 'guarantee']
 WARN_WORDS = [' always', 'everything', 'never']
 MUST_KEEP = {
@@ -18,12 +19,18 @@ MUST_KEEP = {
     'work':     ['26-SKU'],
     'contact':  ['24 hours', '30%', '70%'],
 }
-BASELINE_WORDS = {'index': 78, 'services': 558, 'work': 168, 'contact': 508}
+# 市场版必备事实 = GEO 市场差异信号（check --dir dist/us 等时生效）
+MARKET_MUST_KEEP = {
+    'us': {'index': ['China team']},
+    'uk': {'index': ['accountable']},
+    'eu': {'index': ['quality checks', 'documentation']},
+}
+BASELINE_WORDS = {'index': 143, 'services': 558, 'work': 168, 'contact': 508}  # index 2026-08-27 重校：+How It Works 流程区（78→143）
 PAGE_BAND = (0.70, 1.10)   # 上界放宽：v3.1 信任包（hero 数字条/实体锚点/表单隐藏字段）有意新增少量词
 TOTAL_BAND = (0.70, 1.10)  # 上界放宽：8/25 改版 5→4 页，词数结构性下降后重校
 
 def raw(page):
-    return open(os.path.join(ROOT, page + '.html'), encoding='utf-8').read()
+    return open(os.path.join(RAW_DIR, page + '.html'), encoding='utf-8').read()
 
 def strip_tags(s):
     s = re.sub(r'<script.*?</script>', ' ', s, flags=re.S)
@@ -62,8 +69,12 @@ def check(page):
     n = len(re.findall(r'href="[^"]*""', s))
     if n:
         errs.append(f'href 双引号残留 x{n}')
-    # 4) 必备事实
-    for k in MUST_KEEP.get(page, []):
+    # 4) 必备事实（市场版用各自的市场差异信号）
+    mkt = os.path.basename(RAW_DIR)
+    if mkt in ('dist', '') or mkt == RAW_DIR:
+        mkt = 'global'
+    rules = MARKET_MUST_KEEP.get(mkt, {}) if mkt != 'global' else MUST_KEEP
+    for k in rules.get(page, []):
         if k not in s:
             errs.append(f'必备事实 {k!r} 缺失')
     # 5) 词数带
@@ -80,18 +91,25 @@ def check(page):
     return errs, warns
 
 def main():
+    global RAW_DIR
     args = sys.argv[1:]
+    if args and args[0] == '--dir':
+        if len(args) < 2:
+            print('usage: check_copy.py [--dir <sub>] [--page <name>]', file=sys.stderr)
+            sys.exit(2)
+        RAW_DIR = os.path.join(ROOT, args[1])
+        args = args[2:]
     if args and args[0] == '--page':
         if len(args) < 2:
-            print('usage: check_copy.py [--page <name>]', file=sys.stderr)
+            print('usage: check_copy.py [--dir <sub>] [--page <name>]', file=sys.stderr)
             sys.exit(2)
         pages = args[1:]
     else:
-        pages = [os.path.splitext(os.path.basename(p))[0] for p in sorted(glob.glob(os.path.join(ROOT, '*.html')))]
+        pages = [os.path.splitext(os.path.basename(p))[0] for p in sorted(glob.glob(os.path.join(RAW_DIR, '*.html')))]
     bad, n_err, n_warn = False, 0, 0
     total_w = total_base = 0
     for p in pages:
-        if not os.path.exists(os.path.join(ROOT, p + '.html')):
+        if not os.path.exists(os.path.join(RAW_DIR, p + '.html')):
             print(f'{p}.html: FAIL')
             print(f'  ERR 页面不存在')
             bad = True
