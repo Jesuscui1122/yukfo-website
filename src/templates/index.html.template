@@ -13,8 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=20260902c">
-<script src="assets/js/main.js?v=20260902c" defer></script>
+<link rel="stylesheet" href="assets/css/style.css?v=20260902d">
+<script src="assets/js/main.js?v=20260902d" defer></script>
 {{hreflang_block}}
 {{schema_block}}
 </head>
@@ -43,7 +43,7 @@
         <!-- BR No. 待核验证书后加回（候选 80477500）：缺信息比假信息安全 -->
         <p style="margin-top:10px;color:var(--gray);font-size:.82rem">Reply within 24 hours on working days · Yukfo Limited, Hong Kong</p>
       </div>
-      <div class="hero-img"><img src="assets/images/work/work-plastic-parts.jpg" alt="Custom plastic components from a delivered project"></div>
+      <div class="hero-img"><img src="assets/images/work/work-mold-and-bottle.jpg" alt="Custom bottle with its mold, from a delivered project"></div>
     </div>
   </section>
 
@@ -63,7 +63,7 @@
     <div class="container">
       <h2>Selected Sourcing Projects</h2>
       <div class="case-grid">
-        <div class="case-card"><img src="assets/images/work/work-mold-and-bottle.jpg" alt="Plastic bottle molded for a project"><div class="c-body"><span class="c-tag">INJECTION MOLDING</span><h3>Plastic Components</h3></div></div>
+        <div class="case-card"><img src="assets/images/work/work-plastic-parts.jpg" alt="Colored plastic parts from a delivered project"><div class="c-body"><span class="c-tag">INJECTION MOLDING</span><h3>Plastic Components</h3></div></div>
         <div class="case-card"><img src="assets/images/work/work-precision-metal.jpg" alt="Precision metal parts"><div class="c-body"><span class="c-tag">METAL FABRICATION</span><h3>Metal Parts</h3></div></div>
         <div class="case-card"><img src="assets/images/work/work-finished-product.jpg" alt="Industrial fan sourced from a Chinese supplier"><div class="c-body"><span class="c-tag">PRODUCT SOURCING</span><h3>Product Sourcing</h3></div></div>
       </div>
