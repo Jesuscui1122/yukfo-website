@@ -5,6 +5,11 @@ import http.server, socketserver, os, sys
 class H(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *a, **kw):
         super().__init__(*a, directory='.', **kw)
+    def end_headers(self):
+        # 预览服务器禁止一切缓存：浏览器必须每次回源取最新
+        self.send_header('Cache-Control', 'no-cache, no-store, must-revalidate')
+        self.send_header('Expires', '0')
+        super().end_headers()
     def do_GET(self):
         p = self.path.split('?')[0]
         if p == '/' or (not os.path.splitext(p)[1] and not p.endswith('/')):
