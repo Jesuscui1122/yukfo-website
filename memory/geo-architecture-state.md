@@ -61,6 +61,16 @@ scripts/verify_geo.py          ← build 后全量验证（title/meta/hero/schem
 - **未提交 git**：今天所有改动（work 模板/文案/图片/规则文档）未 commit——明天先提交
 - **待部署**：dist 9 张版已就绪未拖
 
+## 2026-09-01 追加：定位改版落地（sourcing agent on the ground，commit e2982e1）
+
+- **背景**：用户两条桌面指令（合并版）要求商业转化优化。两条定位冲突（"Manufacturing Partner" 商业味 vs "Founder-led sourcing agent" 个人味）——**裁决按后者**（与 8/9 以来全部已确认定位一致；指令一明文禁 "manufacturing partner"）；指令一的不冲突机械项（紧凑 hero/间距收紧/删弱项目/去灰框/按钮简化）全部吸收
+- **文案**：hero "Need something from China? I'm your sourcing agent on the ground." + kicker "One contact. Multiple suppliers. Complete coordination."（模板硬编码，4 市场共用）；How It Works 三步改采购代理流程+删重复 CTA；services "What I Do"→"How I Help"（Supplier Sourcing/Supplier Verification/Order Management）；"Why Not Directly a Factory?"→"Why Work With a Sourcing Agent?"且上移到服务卡后；Processes/Materials 表降级到页底（深入了解阶段）
+- **Work 页 9→7 卡**：删 PVC Extrusion Structural Profiles（图文不符——即原 04 待替换项，指令改为直接删项目）+ Steel Rotomolding Mold（客户难理解）；case-meta 灰框 chips 全删，改 Category/Title/一句价值（统一词表：sample verification/production follow-up/quotation comparison/delivery coordination，禁 supplier coordination/communication/sample review 重复）；图片已删（git 可恢复）；**04 PVC 待替换事项随项目删除而关闭**
+- **SEO**：title/meta 织入 China sourcing agent/supplier verification/product sourcing from China（4 市场）；市场必备事实保留（us China team / uk accountable / eu quality checks+documentation）；check_copy 基线重校 165/528/179，4 市场 0 错误；verify_geo ALL PASSED
+- **CSS**：.section 56→40px、hero-split 88/72→64/56px、lead mb 32→24px、新增 .hero-kicker（蓝 600）；移动端断点同比收紧（480 section 32px）——字体/颜色/导航/断点结构未动
+- **未部署**：dist/ 已就绪待用户拖拽；根目录遗留旧版 *.html（GEO 前产物，非部署源）未动
+- **注意**：8/27 维护模式冻结被本指令解除一次；check_copy HARD_WORDS 含 'trusted'（指令备选 hero "Your trusted person" 本就过不了校验）
+
 ## 2026-09-01 追加：中国大陆访问已封禁（用户要求）
 
 - **Cloudflare WAF 自定义规则**（zone 级，1/5 免费额度）：`Block China traffic` = `(ip.src.country eq "CN")` → **Block**，Active
@@ -77,7 +87,8 @@ scripts/verify_geo.py          ← build 后全量验证（title/meta/hero/schem
 3. **Search Console**：添加 yukfo.com 域名属性（DNS TXT 验证）→ 提交 4 个 sitemap（yukfo.com/us/uk/eu）
 4. BR 号：证书核验后加回首页
 5. ~~git push~~ ✅ **已推送**（2026-09-01，8875156..d091d45，18 个提交直达 GitHub；第一次尝试 408 超时失败，repo-local `http.postBuffer 524288000` + 重试成功——以后 push 失败先试这个）
-6. ~~铝型材/PVC 合格素材：用户放入 work-images-approved/ 后 AI 替换+build~~ **03 铝型材 ✅ 已替换并部署**（2026-09-01，commit 43599a6 + 1a11a3d；线上图片哈希=dist 新图 112853B，work 页 9 卡片字节级一致）；**04 PVC 仍待替换**（主体太小，用户提供素材后走同流程）
-7. 下次会话读本文件 + docs/geo-entity-definition.md + docs/image-selection-rules.md 后开工
+6. ~~铝型材/PVC 合格素材~~ **03 铝型材 ✅ 已替换并部署**；**04 PVC ✅ 事项关闭**（2026-09-01 定位改版按用户指令直接删除该 e2982e1 项目，不再等素材）
+7. **部署定位改版 dist/**（commit e2982e1 产物，7 卡片版 + 新 hero）——待用户拖拽上传
+8. 下次会话读本文件 + docs/geo-entity-definition.md + docs/image-selection-rules.md 后开工
 
 相关：[[modern-simple-redesign]]（历史：4 页改版）、[[yukfo-email-warmup]]（邮箱预热）
