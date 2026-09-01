@@ -69,6 +69,20 @@
     "title": "Alternative Product Solution",
     "desc": "Finding a suitable alternative when the exact product is not available.",
     "img": "assets/images/work/work-finished-product.jpg",
-    "alt": "Industrial fan sourced as an alternative product"
+    "alt": "Industrial fan sourced as an alternative product",
+    "gallery": [
+      {
+        "img": "assets/images/work/work-sourcing-led.jpg",
+        "alt": "LED marker light sourced for a client"
+      },
+      {
+        "img": "assets/images/work/work-sourcing-charger.jpg",
+        "alt": "USB charger socket sourced for a client"
+      },
+      {
+        "img": "assets/images/work/work-sourcing-camera.jpg",
+        "alt": "Backup camera sourced for a client"
+      }
+    ]
   }
 ]

@@ -13,8 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=20260903a">
-<script src="assets/js/main.js?v=20260903a" defer></script>
+<link rel="stylesheet" href="assets/css/style.css?v=20260903b">
+<script src="assets/js/main.js?v=20260903b" defer></script>
 {{hreflang_block}}
 {{schema_block}}
 </head>
@@ -38,7 +38,7 @@
       <p class="crumb"><a href="work">&larr; Back to Work</a></p>
       <span class="c-tag">{{project_category}}</span>
       <h1>{{project_title}}</h1>
-      <img src="{{project_img}}" alt="{{project_alt}}">
+      {{project_gallery}}
       <p class="desc">{{project_desc}} Every project is coordinated on the ground in China: supplier search, sample verification, production follow-up and delivery, all through one contact.</p>
       <a class="btn" href="contact">Start a Project</a>
       <p style="margin-top:14px;color:var(--gray);font-size:.85rem">Reply within 24 hours on working days · Yukfo Limited, Hong Kong</p>

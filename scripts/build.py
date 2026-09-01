@@ -27,6 +27,16 @@ with open(os.path.join(MKTS_DIR, 'work_projects.json'), encoding='utf-8') as _f:
 with open(os.path.join(TPL_DIR, 'work_detail.html.template'), encoding='utf-8', newline='') as _f:
     DETAIL_TPL = _f.read()
 
+
+def project_gallery_html(prj):
+    """Main photo first, optional extra gallery photos after."""
+    items = [(prj['img'], prj['alt'])]
+    items += [(g['img'], g['alt']) for g in prj.get('gallery', [])]
+    if len(items) == 1:
+        return f'<img src="{items[0][0]}" alt="{items[0][1]}">'
+    cells = ''.join(f'<img src="{i}" alt="{a}">' for i, a in items)
+    return f'<div class="gallery">{cells}</div>'
+
 PAGES = ['index', 'services', 'work', 'contact', 'thanks']
 MARKET_FILES = ['global.json', 'us.json', 'uk.json', 'eu.json']
 SHARED = ['_redirects']
@@ -191,9 +201,8 @@ def main():
                                     ('en', 'eu'), ('x-default', 'global'))),
                 'project_category': prj['category'],
                 'project_title': prj['title'],
-                'project_img': prj['img'],
-                'project_alt': prj['alt'],
                 'project_desc': prj['desc'],
+                'project_gallery': project_gallery_html(prj),
             }
             t = DETAIL_TPL
             for k, v in fields.items():
