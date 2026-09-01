@@ -165,16 +165,16 @@ h1,h2,h3{line-height:1.35}
 .table-scroll .spec-table{margin:0}
 /* ============ Modern Minimal (2026-08-25) ============ */
 /* split hero: left text, right image */
-.hero-split{padding:40px 0 8px}
+.hero-split{padding:40px 0 0}
 /* Hero 与下一个 section 的间隙：用户要求缩小一半 */
-.hero-split + .section{padding-top:14px}
+.hero-split + .section{padding-top:6px}
 .hero-split .container{display:flex;align-items:center;gap:48px}
 .hero-split .hero-text{flex:1.5;min-width:0}
-.hero-split .hero-img{margin-top:36px}
+.hero-split .hero-img{margin-top:12px}
 .hero-split h1{font-size:clamp(24px,2.8vw,30px);font-weight:700;line-height:1.12;letter-spacing:-.02em;max-width:660px}
 .hero-split h1 span{display:block;margin-top:6px;text-wrap:balance}
 .hero-split .sub{font-size:1rem;color:var(--gray);max-width:520px;margin:10px 0 18px;line-height:1.6}
-.hero-split .hero-img{flex:1}
+.hero-split .hero-img{flex:0.9}
 .hero-split .hero-img img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);background:var(--bg);box-shadow:0 18px 44px rgba(30,58,95,.16)}
 /* case grid: clean 3-col photo wall */
 .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
