@@ -165,7 +165,7 @@ h1,h2,h3{line-height:1.35}
 .table-scroll .spec-table{margin:0}
 /* ============ Modern Minimal (2026-08-25) ============ */
 /* split hero: left text, right image */
-.hero-split{padding:0}
+.hero-split{padding:0;position:relative;z-index:2}
 /* Hero 与下一个 section 的间隙：标题区上移填入图片左侧空档 */
 .hero-split + .section{margin-top:-52px;padding-top:6px;position:relative;background:var(--bg)}
 .hero-split .container{display:flex;align-items:flex-start;gap:28px}
