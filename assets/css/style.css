@@ -169,9 +169,9 @@ h1,h2,h3{line-height:1.35}
 /* Hero 与下一个 section 的间隙：用户要求缩小一半 */
 .hero-split + .section{padding-top:14px}
 .hero-split .container{display:flex;align-items:flex-start;gap:48px}
-.hero-split .hero-text{flex:1.05;min-width:0}
+.hero-split .hero-text{flex:1.5;min-width:0}
 .hero-split .hero-img{margin-top:36px}
-.hero-split h1{font-size:clamp(26px,3.2vw,32px);font-weight:700;line-height:1.08;letter-spacing:-.02em;max-width:560px}
+.hero-split h1{font-size:clamp(24px,2.8vw,30px);font-weight:700;line-height:1.12;letter-spacing:-.02em;max-width:660px}
 .hero-split h1 span{display:block;margin-top:6px;text-wrap:balance}
 .hero-split .sub{font-size:1rem;color:var(--gray);max-width:520px;margin:10px 0 18px;line-height:1.6}
 .hero-split .hero-img{flex:1}
