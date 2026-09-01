@@ -38,8 +38,8 @@
       <h2>What I Do</h2>
       <p class="lead">Three ways to work with me. A drawing or a rough idea is all it takes. Most projects start with a sample or a trial run, then move into production.</p>
       <div class="grid">
-        <div class="card"><span class="tag">Product Sourcing</span><h3>Anything You Need</h3><p>You name it, I source it: standard or custom components, finished goods, tools, hardware. Prices compared across suppliers, samples verified and factories checked before your money moves.</p></div>
-        <div class="card"><span class="tag">Production Coordination</span><h3>Parts Made to Order</h3><p>Injection molding, rotomolding, extrusion, foam die-cutting, metal fabrication. Made in partner factories, with molds developed and validated before production starts.</p></div>
+        <div class="card"><span class="tag">Product Sourcing</span><h3>Anything You Need</h3><p>I help source custom components, finished goods, tools and hardware based on your requirements. Prices are compared across suppliers, samples verified, and supplier information is reviewed before production decisions are made.</p></div>
+        <div class="card"><span class="tag">Production Coordination</span><h3>Parts Made to Order</h3><p>Injection molding, rotomolding, extrusion, foam die-cutting, metal fabrication. Produced through selected suppliers based on project requirements, with molds reviewed and samples checked before production starts.</p></div>
         <div class="card"><span class="tag">Turnkey Delivery</span><h3>Project Management</h3><p>Sourcing, prototyping, production, QC, documents, shipping: end to end, all of it. One contact: me.</p></div>
       </div>
     </div>
@@ -82,7 +82,7 @@
   <section class="section">
     <div class="container">
       <h2>Why Not Directly a Factory?</h2>
-      <p class="lead">Finding a factory is the easy part. The work is in comparing quotes, checking samples, chasing schedules, and catching problems before they ship. A sourcing agent answers for the whole chain: one contact, itemized quotes, and real cost data behind every number.</p>
+      <p class="lead">Finding a factory is the easy part. The work is in comparing quotes, checking samples, chasing schedules, and catching problems before they ship. A sourcing agent answers for the whole chain: one contact, itemized quotes, and prices compared across supplier quotations.</p>
       <a class="btn" href="contact">Start a Project</a>
     </div>
   </section>

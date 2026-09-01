@@ -14,7 +14,7 @@ RAW_DIR = ROOT  # 默认检查仓库根；--dir <sub> 时检查 ROOT/<sub>
 HARD_WORDS = ['trusted', 'my own production', 'own factory', "i've shipped", 'guarantee']
 WARN_WORDS = [' always', 'everything', 'never']
 MUST_KEEP = {
-    'index':    ['No category limits'],
+    'index':    ['custom products and components'],
     'services': ['PA6', 'ABS', 'PP', 'EVA', 'IXPE'],
     'work':     ['26-SKU'],
     'contact':  ['24 hours', '30%', '70%'],

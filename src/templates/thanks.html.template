@@ -35,7 +35,7 @@
       <p class="lead">Your inquiry is in. I reply within 24 hours on working days.</p>
       <div class="qstep"><div class="num">1</div><div><h3>I Check the Details</h3><p>Your drawing, specs, and target price go against real factory data.</p></div></div>
       <div class="qstep"><div class="num">2</div><div><h3>You Get My Reply</h3><p>Questions, options, or a quote path, within 24 hours on working days.</p></div></div>
-      <div class="qstep"><div class="num">3</div><div><h3>Samples First, Then Production</h3><p>You approve samples before mass production starts. Nothing moves without your confirmation.</p></div></div>
+      <div class="qstep"><div class="num">3</div><div><h3>Samples First, Then Production</h3><p>You approve samples before mass production starts. Production starts after sample confirmation.</p></div></div>
     </div>
   </section>
 </main>
