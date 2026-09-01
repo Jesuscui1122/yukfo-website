@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "bottle-tooling",
+    "category": "BLOW MOLDING",
+    "title": "Custom Bottle with Tooling",
+    "desc": "Mold follow-up, material selection and sample approval.",
+    "img": "assets/images/work/work-mold-and-bottle.jpg",
+    "alt": "Blow molded bottle with its mold"
+  },
+  {
+    "slug": "injection-mold",
+    "category": "INJECTION MOLDING",
+    "title": "Custom Injection Mold",
+    "desc": "Supplier matching, tooling review and sample verification.",
+    "img": "assets/images/work/work-electrical-panel.jpg",
+    "alt": "Injection mold"
+  },
+  {
+    "slug": "plastic-components",
+    "category": "PLASTIC COMPONENTS",
+    "title": "Plastic Components",
+    "desc": "Supplier sourcing, sample verification and production follow-up.",
+    "img": "assets/images/work/work-plastic-parts.jpg",
+    "alt": "Colored plastic parts from a delivered project"
+  },
+  {
+    "slug": "window-door-profiles",
+    "category": "ALUMINUM EXTRUSION",
+    "title": "Window & Door Profiles",
+    "desc": "Extrusion supplier search, die development and production follow-up.",
+    "img": "assets/images/work/work-aluminum-extrusion.jpg",
+    "alt": "Aluminum extrusion profile"
+  },
+  {
+    "slug": "zinc-parts",
+    "category": "DIE CASTING",
+    "title": "Zinc Alloy Parts",
+    "desc": "Supplier verification, quality checking and delivery coordination.",
+    "img": "assets/images/work/work-die-casting.jpg",
+    "alt": "Die cast zinc parts"
+  },
+  {
+    "slug": "metal-parts",
+    "category": "METAL FABRICATION",
+    "title": "Metal Parts",
+    "desc": "Supplier search, quotation comparison and quality coordination.",
+    "img": "assets/images/work/work-precision-metal.jpg",
+    "alt": "Precision metal parts"
+  },
+  {
+    "slug": "rotomold-mold",
+    "category": "ROTOMOLDING",
+    "title": "Aluminum Rotomolding Mold",
+    "desc": "Large aluminum mold coordinated from design review to first samples.",
+    "img": "assets/images/work/work-rotomold-aluminum.jpg",
+    "alt": "Aluminum rotomolding mold"
+  },
+  {
+    "slug": "hardware",
+    "category": "HARDWARE PARTS",
+    "title": "Hardware Components",
+    "desc": "Quotation comparison across suppliers for hardware parts.",
+    "img": "assets/images/work/work-metal-assembly.jpg",
+    "alt": "Hardware components"
+  },
+  {
+    "slug": "product-sourcing",
+    "category": "PRODUCT SOURCING",
+    "title": "Alternative Product Solution",
+    "desc": "Finding a suitable alternative when the exact product is not available.",
+    "img": "assets/images/work/work-finished-product.jpg",
+    "alt": "Industrial fan sourced as an alternative product"
+  }
+]

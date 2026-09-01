@@ -4,15 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{title}}</title>
-<meta name="robots" content="noindex">
+<meta name="description" content="{{meta_description}}">
 <meta property="og:title" content="{{og_title}}">
+<meta property="og:description" content="{{og_description}}">
 <meta property="og:type" content="website">
+<link rel="canonical" href="{{canonical}}">
 <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css?v=20260903a">
 <script src="assets/js/main.js?v=20260903a" defer></script>
+{{hreflang_block}}
+{{schema_block}}
 </head>
 <body>
 <header class="site-header">
@@ -30,18 +34,20 @@
 
 <main>
   <section class="section" style="border-top:0">
-    <div class="container">
-      <h2>Message Received</h2>
-      <p class="lead">Your inquiry is in. I reply within 24 hours on working days.</p>
-      <div class="qstep"><div class="num">1</div><div><h3>I Check the Details</h3><p>Your drawing, specs, and target price go against real factory data.</p></div></div>
-      <div class="qstep"><div class="num">2</div><div><h3>You Get My Reply</h3><p>Questions, options, or a quote path, within 24 hours on working days.</p></div></div>
-      <div class="qstep"><div class="num">3</div><div><h3>Samples First, Then Production</h3><p>You approve samples before mass production starts. Production starts after sample confirmation.</p></div></div>
+    <div class="container detail">
+      <p class="crumb"><a href="work">&larr; Back to Work</a></p>
+      <span class="c-tag">{{project_category}}</span>
+      <h1>{{project_title}}</h1>
+      <img src="{{project_img}}" alt="{{project_alt}}">
+      <p class="desc">{{project_desc}} Every project is coordinated on the ground in China: supplier search, sample verification, production follow-up and delivery, all through one contact.</p>
+      <a class="btn" href="contact">Start a Project</a>
+      <p style="margin-top:14px;color:var(--gray);font-size:.85rem">Reply within 24 hours on working days · Yukfo Limited, Hong Kong</p>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
+<footer class="site-footer footer-line">
+  <div class="container">
     <span>© 2026 YUKFO · Yukfo Limited, Hong Kong</span>
   </div>
 </footer>

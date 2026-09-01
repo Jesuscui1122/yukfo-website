@@ -21,6 +21,12 @@ MKTS_DIR = os.path.join(ROOT, 'src', 'markets')
 OUT = os.path.join(ROOT, 'dist')
 ASSETS = os.path.join(ROOT, 'assets')
 
+# shared project data driving the work detail pages (work-<slug>.html)
+with open(os.path.join(MKTS_DIR, 'work_projects.json'), encoding='utf-8') as _f:
+    PROJECTS = json.load(_f)
+with open(os.path.join(TPL_DIR, 'work_detail.html.template'), encoding='utf-8', newline='') as _f:
+    DETAIL_TPL = _f.read()
+
 PAGES = ['index', 'services', 'work', 'contact', 'thanks']
 MARKET_FILES = ['global.json', 'us.json', 'uk.json', 'eu.json']
 SHARED = ['_redirects']
@@ -166,7 +172,39 @@ def main():
             with open(os.path.join(target, f'{page}.html'), 'w',
                       encoding='utf-8', newline='') as f:
                 f.write(html)
-        print(f'{mkt}: {len(PAGES)} pages')
+        # work detail pages: one per project, per market
+        crlf_detail = '\r\n' in DETAIL_TPL
+        for prj in PROJECTS:
+            slug = prj['slug']
+            path = f'/work-{slug}'
+            fields = {
+                'title': f"{prj['title']} | China Sourcing Agent | YUKFO",
+                'meta_description': (
+                    f"{prj['category']}: {prj['desc']} "
+                    'Coordinated by YUKFO, your sourcing agent on the ground in China.'),
+                'og_title': f"{prj['title']} | YUKFO",
+                'og_description': prj['desc'],
+                'canonical': f'https://{DOMAIN[mkt]}{path}',
+                'hreflang_block': '\n'.join(
+                    f'<link rel="alternate" hreflang="{code}" href="https://{DOMAIN[l]}{path}" />'
+                    for code, l in (('en-us', 'us'), ('en-gb', 'uk'),
+                                    ('en', 'eu'), ('x-default', 'global'))),
+                'project_category': prj['category'],
+                'project_title': prj['title'],
+                'project_img': prj['img'],
+                'project_alt': prj['alt'],
+                'project_desc': prj['desc'],
+            }
+            t = DETAIL_TPL
+            for k, v in fields.items():
+                t = t.replace('{{' + k + '}}', str(v))
+            t = re.sub(r'^[ \t]*\{\{\w+\}\}[ \t]*\r?\n', '', t, flags=re.M)
+            if crlf_detail:
+                t = t.replace('\r\n', '\n').replace('\n', '\r\n')
+            with open(os.path.join(target, f'work-{slug}.html'), 'w',
+                      encoding='utf-8', newline='') as f:
+                f.write(t)
+        print(f'{mkt}: {len(PAGES)} pages + {len(PROJECTS)} work details')
 
     # shared assets / config at global root
     shutil.copytree(ASSETS, os.path.join(OUT, 'assets'))
