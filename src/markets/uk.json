@@ -3,10 +3,10 @@
   "area_served": "United Kingdom",
   "pages": {
     "index": {
-      "title": "YUKFO — A Reliable China Sourcing Partner for UK Businesses",
-      "meta_description": "A sourcing partner in China who answers for the whole job. Supplier coordination, quality control and delivery for UK small businesses, with one accountable contact from quote to delivery.",
-      "og_title": "YUKFO — A Reliable China Sourcing Partner for UK Businesses",
-      "og_description": "One accountable partner manages your China sourcing: supplier coordination, quality control and delivery.",
+      "title": "YUKFO — China Sourcing Agent for UK Businesses",
+      "meta_description": "A China sourcing partner who answers for the whole job. Supplier verification, quotation comparison and delivery for UK small businesses, with one accountable contact from quote to delivery.",
+      "og_title": "YUKFO — China Sourcing Agent for UK Businesses",
+      "og_description": "One accountable sourcing agent in China: supplier verification, quality checks and delivery.",
       "canonical": "https://uk.yukfo.com/",
       "hreflang": {
         "en-us": "https://us.yukfo.com/",
@@ -14,17 +14,17 @@
         "en": "https://eu.yukfo.com/",
         "x-default": "https://yukfo.com/"
       },
-      "hero_h1": "One person in China who answers",
-      "hero_h1_accent": "for the whole job.",
-      "hero_sub": "I focus on clear communication, careful coordination and long term working relationships.",
+      "hero_h1": "One accountable contact in China",
+      "hero_h1_accent": "for your whole sourcing job.",
+      "hero_sub": "I help UK buyers find reliable suppliers, verify samples and manage production through to delivery.",
       "cta_primary": "Discuss Your Project",
-      "cta_secondary": "Get an Itemized Quote"
+      "cta_secondary": "Request a Quote"
     },
     "services": {
-      "title": "Sourcing Services — Suppliers, Production Coordination | YUKFO",
-      "meta_description": "Reliable China sourcing for UK small businesses: supplier selection, production coordination, quality control and delivery, managed through partner factories. One accountable contact.",
-      "og_title": "Services — YUKFO",
-      "og_description": "Supplier selection, production coordination, quality control and delivery. One partner from drawings to delivered goods.",
+      "title": "How I Help — China Sourcing Agent for UK Businesses | YUKFO",
+      "meta_description": "China sourcing agent for UK small businesses: supplier sourcing, supplier verification and order management, with one accountable contact from quotation to delivery.",
+      "og_title": "How I Help — YUKFO",
+      "og_description": "Supplier sourcing, supplier verification and order management. One contact from quotation to delivered goods.",
       "canonical": "https://uk.yukfo.com/services",
       "hreflang": {
         "en-us": "https://us.yukfo.com/services",
@@ -34,10 +34,10 @@
       }
     },
     "work": {
-      "title": "Work — Real Products, Delivered | YUKFO",
-      "meta_description": "Real projects delivered by YUKFO: injection molded parts, precision metal parts, rotomolded kayaks, blind systems, extruded profiles, and more. Photos of real work, shipped to clients overseas.",
-      "og_title": "Work — YUKFO",
-      "og_description": "Real projects, delivered. Photos of actual parts and products shipped to clients overseas.",
+      "title": "Selected Sourcing Projects — Real Products Sourced in China | YUKFO",
+      "meta_description": "Sourcing projects delivered for overseas buyers: injection molding, metal fabrication, aluminum extrusion, die casting, hardware and product sourcing from China. Real photos of real deliveries.",
+      "og_title": "Selected Sourcing Projects — YUKFO",
+      "og_description": "Real products sourced in China for overseas buyers. Photos of actual deliveries.",
       "canonical": "https://uk.yukfo.com/work",
       "hreflang": {
         "en-us": "https://us.yukfo.com/work",
@@ -61,7 +61,7 @@
       "faq": [
         {
           "q": "Who is YUKFO?",
-          "a": "YUKFO is me, a sourcing partner with six years on the front line of cross-border supply chains. No layers of middlemen: one person coordinates the project from supplier communication to delivery. I focus on clear communication, careful coordination and long term working relationships."
+          "a": "YUKFO is me, a sourcing partner with six years on the front line of cross-border supply chains. No layers of middlemen: one person coordinates the project from first quote to delivery. I deal with the factories directly, so nothing gets lost between contacts."
         },
         {
           "q": "Are you a factory?",

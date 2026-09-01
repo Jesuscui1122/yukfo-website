@@ -42,10 +42,10 @@ img{max-width:100%;display:block}
 .btn-ghost{background:transparent;color:var(--blue)!important;border:1px solid var(--blue)}
 .btn-ghost:hover{background:var(--bg-soft)}
 /* sections */
-.section{padding:56px 0;border-bottom:1px solid var(--line)}
+.section{padding:40px 0;border-bottom:1px solid var(--line)}
 .section h2{font-size:1.6rem;font-weight:700;margin-bottom:8px}
 .section h2::before{content:"";display:inline-block;width:4px;height:1.1em;background:var(--blue);margin-right:10px;vertical-align:-2px}
-.section .lead{color:var(--gray);max-width:680px;margin-bottom:32px}
+.section .lead{color:var(--gray);max-width:680px;margin-bottom:24px}
 /* reading experience: keep text blocks narrow for comfort */
 .card p{max-width:65ch}
 .industry p{max-width:65ch}
@@ -126,7 +126,7 @@ h1,h2,h3{line-height:1.35}
   .hero .btn{display:block;width:100%;margin:8px 0 0!important;text-align:center}
   .hero-stats{gap:16px}
   .hero-stat{flex:1 1 40%}
-  .section{padding:40px 0}
+  .section{padding:32px 0}
   .section h2{font-size:1.35rem}
 }
 /* ============ Knowledge System Components (2026-08-19) ============ */
@@ -165,11 +165,12 @@ h1,h2,h3{line-height:1.35}
 .table-scroll .spec-table{margin:0}
 /* ============ Modern Minimal (2026-08-25) ============ */
 /* split hero: left text, right image */
-.hero-split{padding:88px 0 72px}
+.hero-split{padding:64px 0 56px}
 .hero-split .container{display:flex;align-items:center;gap:56px}
 .hero-split .hero-text{flex:1.15;min-width:0}
 .hero-split h1{font-size:clamp(34px,4.5vw,52px);font-weight:700;line-height:1.12;letter-spacing:-.02em;max-width:600px}
-.hero-split .sub{font-size:1.05rem;color:var(--gray);max-width:440px;margin:22px 0 34px;line-height:1.65}
+.hero-split .sub{font-size:1.05rem;color:var(--gray);max-width:440px;margin:18px 0 12px;line-height:1.65}
+.hero-split .hero-kicker{font-weight:600;color:var(--blue);font-size:.95rem;margin:0 0 24px}
 .hero-split .hero-img{flex:1}
 .hero-split .hero-img img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;box-shadow:0 18px 44px rgba(30,58,95,.16)}
 /* case grid: clean 3-col photo wall */
@@ -193,7 +194,7 @@ h1,h2,h3{line-height:1.35}
 .footer-line a:hover{color:var(--blue)}
 @media(max-width:1024px){.hero-split .container{gap:36px}.hero-split h1{font-size:2.2rem}}
 @media(max-width:768px){
-  .hero-split{padding:56px 0 48px}
+  .hero-split{padding:44px 0 40px}
   .hero-split .container{flex-direction:column}
   .hero-split .hero-img{width:100%}
   .case-grid{grid-template-columns:repeat(2,1fr)}

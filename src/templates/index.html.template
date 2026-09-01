@@ -38,11 +38,11 @@
       <div class="hero-text">
         <h1>{{hero_h1}} <span style="color:var(--gold-deep)">{{hero_h1_accent}}</span></h1>
         <p class="sub">{{hero_sub}}</p>
+        <p class="hero-kicker">One contact. Multiple suppliers. Complete coordination.</p>
         <a class="btn" href="contact">{{cta_primary}}</a>
         <a class="btn btn-ghost" href="contact" style="margin-left:10px">{{cta_secondary}}</a>
-        <p style="margin-top:16px;color:var(--gray);font-size:.82rem">Reply within 24 hours on working days.</p>
         <!-- BR No. 待核验证书后加回（候选 80477500）：缺信息比假信息安全 -->
-        <p style="margin-top:6px;color:var(--gray);font-size:.82rem">Yukfo Limited · Hong Kong</p>
+        <p style="margin-top:16px;color:var(--gray);font-size:.82rem">Reply within 24 hours on working days · Yukfo Limited, Hong Kong</p>
       </div>
       <div class="hero-img"><img src="assets/images/work/work-plastic-parts.jpg" alt="Colored plastic parts from a delivered project"></div>
     </div>
@@ -51,23 +51,22 @@
   <section class="section">
     <div class="container">
       <h2>How It Works</h2>
-      <p class="lead">Tell me what you need. From there, one person coordinates the whole process.</p>
+      <p class="lead">One person manages the whole chain, from first quote to delivered goods.</p>
       <div class="flow">
-        <div class="step"><div class="n">01</div><div class="t">Send your product idea or specifications</div><div class="d">A drawing, a spec, or a rough idea is all it takes.</div></div>
-        <div class="step"><div class="n">02</div><div class="t">I find suitable suppliers and coordinate the process</div><div class="d">Quotes compared, samples verified, production followed up.</div></div>
-        <div class="step"><div class="n">03</div><div class="t">Samples, quality checks and delivery are managed through one contact</div><div class="d">One person answers for the whole process.</div></div>
+        <div class="step"><div class="n">01</div><div class="t">Tell me what you need</div><div class="d">Send drawings, samples, product ideas or requirements.</div></div>
+        <div class="step"><div class="n">02</div><div class="t">I find and verify suppliers</div><div class="d">I compare options, check capabilities and coordinate samples.</div></div>
+        <div class="step"><div class="n">03</div><div class="t">I manage the process</div><div class="d">Production follow-up, quality checks and delivery coordination.</div></div>
       </div>
-      <p style="margin-top:26px"><a class="btn" href="contact">Start a Project</a></p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2>Recent Work</h2>
+      <h2>Selected Sourcing Projects</h2>
       <div class="case-grid">
-        <div class="case-card"><img src="assets/images/work/work-mold-and-bottle.jpg" alt="Injection mold and molded bottle"><div class="c-body"><span class="c-tag">INJECTION MOLDING</span><h3>Mold &amp; Bottle</h3></div></div>
-        <div class="case-card"><img src="assets/images/work/work-plastic-parts.jpg" alt="Colored plastic parts"><div class="c-body"><span class="c-tag">CUSTOM PLASTIC</span><h3>Plastic Parts</h3></div></div>
-        <div class="case-card"><img src="assets/images/work/work-precision-metal.jpg" alt="Precision metal parts"><div class="c-body"><span class="c-tag">METAL FABRICATION</span><h3>Precision Metal</h3></div></div>
+        <div class="case-card"><img src="assets/images/work/work-plastic-parts.jpg" alt="Colored plastic parts from a delivered project"><div class="c-body"><span class="c-tag">INJECTION MOLDING</span><h3>Plastic Components</h3><p>Supplier sourcing, sample verification and production follow-up.</p></div></div>
+        <div class="case-card"><img src="assets/images/work/work-precision-metal.jpg" alt="Precision metal parts"><div class="c-body"><span class="c-tag">METAL FABRICATION</span><h3>Metal Parts</h3><p>Supplier search, quotation comparison and quality coordination.</p></div></div>
+        <div class="case-card"><img src="assets/images/work/work-finished-product.jpg" alt="Industrial fan sourced from a Chinese supplier"><div class="c-body"><span class="c-tag">PRODUCT SOURCING</span><h3>Product Sourcing</h3><p>Finding suitable suppliers based on customer requirements.</p></div></div>
       </div>
       <p style="margin-top:26px"><a class="btn btn-ghost" href="work">See All Work</a></p>
     </div>

@@ -25,7 +25,7 @@ MARKET_MUST_KEEP = {
     'uk': {'index': ['accountable']},
     'eu': {'index': ['quality checks', 'documentation']},
 }
-BASELINE_WORDS = {'index': 143, 'services': 558, 'work': 168, 'contact': 508}  # index 2026-08-27 重校：+How It Works 流程区（78→143）
+BASELINE_WORDS = {'index': 165, 'services': 528, 'work': 179, 'contact': 508}  # 2026-09-01 重校：定位改版（sourcing agent on the ground + 卡片一句价值 + How It Works 删 CTA）
 PAGE_BAND = (0.70, 1.10)   # 上界放宽：v3.1 信任包（hero 数字条/实体锚点/表单隐藏字段）有意新增少量词
 TOTAL_BAND = (0.70, 1.10)  # 上界放宽：8/25 改版 5→4 页，词数结构性下降后重校
 
