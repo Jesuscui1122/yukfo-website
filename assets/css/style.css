@@ -137,12 +137,12 @@ h1,h2,h3{line-height:1.35}
 .spec-table td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
 .spec-table tr:last-child td{border-bottom:1px solid var(--line)}
 /* process flow: horizontal step bar */
-.flow{display:flex;gap:0;margin:20px 0;flex-wrap:wrap;border:1px solid var(--line);border-radius:var(--radius)}
-.flow .step{flex:1;min-width:130px;padding:14px 16px;border-right:1px solid var(--line);position:relative}
+.flow{display:flex;gap:0;margin:16px 0;flex-wrap:wrap;border:1px solid var(--line);border-radius:var(--radius)}
+.flow .step{flex:1;min-width:130px;padding:10px 14px;border-right:1px solid var(--line);position:relative}
 .flow .step:last-child{border-right:none}
 .flow .step .n{font-size:.75rem;color:var(--gold-deep);font-weight:700;letter-spacing:.05em}
 .flow .step .t{font-weight:600;color:var(--ink);font-size:.92rem;margin-top:2px}
-.flow .step .d{font-size:.8rem;color:var(--gray);margin-top:4px;line-height:1.45}
+.flow .step .d{font-size:.8rem;color:var(--gray);margin-top:4px;line-height:1.4}
 /* capability matrix: compact overview grid */
 .matrix{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:8px 0}
 .matrix .cell{background:var(--bg);padding:14px 16px}
@@ -165,12 +165,12 @@ h1,h2,h3{line-height:1.35}
 .table-scroll .spec-table{margin:0}
 /* ============ Modern Minimal (2026-08-25) ============ */
 /* split hero: left text, right image */
-.hero-split{padding:64px 0 56px}
-.hero-split .container{display:flex;align-items:center;gap:56px}
-.hero-split .hero-text{flex:1.15;min-width:0}
-.hero-split h1{font-size:clamp(34px,4.5vw,52px);font-weight:700;line-height:1.12;letter-spacing:-.02em;max-width:600px}
-.hero-split .sub{font-size:1.05rem;color:var(--gray);max-width:440px;margin:18px 0 12px;line-height:1.65}
-.hero-split .hero-kicker{font-weight:600;color:var(--blue);font-size:.95rem;margin:0 0 24px}
+.hero-split{padding:40px 0 36px}
+.hero-split .container{display:flex;align-items:center;gap:48px}
+.hero-split .hero-text{flex:1.05;min-width:0}
+.hero-split h1{font-size:clamp(30px,3.6vw,40px);font-weight:700;line-height:1.12;letter-spacing:-.02em;max-width:560px}
+.hero-split .sub{font-size:1rem;color:var(--gray);max-width:440px;margin:14px 0 10px;line-height:1.6}
+.hero-split .hero-kicker{font-weight:600;color:var(--blue);font-size:.95rem;margin:0 0 20px}
 .hero-split .hero-img{flex:1}
 .hero-split .hero-img img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;box-shadow:0 18px 44px rgba(30,58,95,.16)}
 /* case grid: clean 3-col photo wall */
@@ -192,9 +192,9 @@ h1,h2,h3{line-height:1.35}
 .footer-line{border-top:1px solid var(--line);padding:22px 0;color:var(--gray);font-size:.85rem;text-align:center}
 .footer-line a{color:var(--gray)}
 .footer-line a:hover{color:var(--blue)}
-@media(max-width:1024px){.hero-split .container{gap:36px}.hero-split h1{font-size:2.2rem}}
+@media(max-width:1024px){.hero-split .container{gap:36px}.hero-split h1{font-size:2rem}}
 @media(max-width:768px){
-  .hero-split{padding:44px 0 40px}
+  .hero-split{padding:32px 0 28px}
   .hero-split .container{flex-direction:column}
   .hero-split .hero-img{width:100%}
   .case-grid{grid-template-columns:repeat(2,1fr)}
