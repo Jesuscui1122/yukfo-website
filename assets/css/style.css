@@ -182,7 +182,7 @@ h1,h2,h3{line-height:1.35}
 .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .case-card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--bg);cursor:zoom-in;transition:transform .25s ease,box-shadow .25s ease}
 .case-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.08)}
-.case-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .35s ease}
+.case-card img{width:100%;aspect-ratio:4/3;object-fit:contain;background:var(--bg);display:block;transition:transform .35s ease}
 .case-card:hover img{transform:scale(1.03)}
 .case-card .c-body{padding:14px 16px 16px}
 .case-card h3{font-size:1rem;margin-bottom:4px}
