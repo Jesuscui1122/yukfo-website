@@ -168,7 +168,7 @@ h1,h2,h3{line-height:1.35}
 .hero-split{padding:40px 0 8px}
 /* Hero 与下一个 section 的间隙：用户要求缩小一半 */
 .hero-split + .section{padding-top:14px}
-.hero-split .container{display:flex;align-items:flex-start;gap:48px}
+.hero-split .container{display:flex;align-items:center;gap:48px}
 .hero-split .hero-text{flex:1.5;min-width:0}
 .hero-split .hero-img{margin-top:36px}
 .hero-split h1{font-size:clamp(24px,2.8vw,30px);font-weight:700;line-height:1.12;letter-spacing:-.02em;max-width:660px}
@@ -198,7 +198,7 @@ h1,h2,h3{line-height:1.35}
 @media(max-width:1024px){.hero-split .container{gap:36px}.hero-split h1{font-size:2rem}}
 @media(max-width:768px){
   .hero-split{padding:24px 0 20px}
-  .hero-split .container{flex-direction:column}
+  .hero-split .container{flex-direction:column;align-items:stretch}
   .hero-split .hero-img{margin-top:0}
   .hero-split .hero-img{width:100%}
   .case-grid{grid-template-columns:repeat(2,1fr)}
