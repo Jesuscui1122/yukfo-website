@@ -168,8 +168,8 @@ h1,h2,h3{line-height:1.35}
 .hero-split{padding:24px 0 0}
 /* Hero 与下一个 section 的间隙：用户要求缩小一半 */
 .hero-split + .section{padding-top:6px}
-.hero-split .container{display:flex;align-items:center;gap:28px}
-.hero-split .hero-text{flex:0.9;min-width:0}
+.hero-split .container{display:flex;align-items:flex-start;gap:28px}
+.hero-split .hero-text{flex:0.9;min-width:0;margin-top:40px}
 .hero-split .hero-img{margin-top:40px}
 /* How It Works 标题前的竖线装饰按用户要求移除 */
 .hero-split + .section h2::before{display:none}
