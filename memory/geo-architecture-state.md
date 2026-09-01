@@ -68,7 +68,7 @@ scripts/verify_geo.py          ← build 后全量验证（title/meta/hero/schem
 3. **Search Console**：添加 yukfo.com 域名属性（DNS TXT 验证）→ 提交 4 个 sitemap（yukfo.com/us/uk/eu）
 4. BR 号：证书核验后加回首页
 5. ~~git push~~ ✅ **已推送**（2026-09-01，8875156..d091d45，18 个提交直达 GitHub；第一次尝试 408 超时失败，repo-local `http.postBuffer 524288000` + 重试成功——以后 push 失败先试这个）
-6. 铝型材/PVC 合格素材：用户放入 work-images-approved/ 后 AI 替换+build
+6. ~~铝型材/PVC 合格素材：用户放入 work-images-approved/ 后 AI 替换+build~~ **03 铝型材 ✅ 已替换并部署**（2026-09-01，commit 43599a6 + 1a11a3d；线上图片哈希=dist 新图 112853B，work 页 9 卡片字节级一致）；**04 PVC 仍待替换**（主体太小，用户提供素材后走同流程）
 7. 下次会话读本文件 + docs/geo-entity-definition.md + docs/image-selection-rules.md 后开工
 
 相关：[[modern-simple-redesign]]（历史：4 页改版）、[[yukfo-email-warmup]]（邮箱预热）
