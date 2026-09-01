@@ -67,7 +67,7 @@ scripts/verify_geo.py          ← build 后全量验证（title/meta/hero/schem
 2. ~~git 提交 2026-08-28 改动~~ ✅ **已提交**（2026-09-01，commit 5ee4e4f，28 文件；git 身份已配到本仓库 repo-local：Jesus <hkyukfo@outlook.com>）
 3. **Search Console**：添加 yukfo.com 域名属性（DNS TXT 验证）→ 提交 4 个 sitemap（yukfo.com/us/uk/eu）
 4. BR 号：证书核验后加回首页
-5. git push（网络受限——npm/Cloudflare API 直连不通，push 需 VPN 正常时执行；本地领先 origin 2 个提交：a896744、5ee4e4f）
+5. ~~git push~~ ✅ **已推送**（2026-09-01，8875156..d091d45，18 个提交直达 GitHub；第一次尝试 408 超时失败，repo-local `http.postBuffer 524288000` + 重试成功——以后 push 失败先试这个）
 6. 铝型材/PVC 合格素材：用户放入 work-images-approved/ 后 AI 替换+build
 7. 下次会话读本文件 + docs/geo-entity-definition.md + docs/image-selection-rules.md 后开工
 
