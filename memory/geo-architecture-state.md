@@ -61,6 +61,14 @@ scripts/verify_geo.py          ← build 后全量验证（title/meta/hero/schem
 - **未提交 git**：今天所有改动（work 模板/文案/图片/规则文档）未 commit——明天先提交
 - **待部署**：dist 9 张版已就绪未拖
 
+## 2026-09-01/02 追加：UI 密集迭代收口（至 commit c20c774，已 push）
+
+- **最终态（用户逐轮确认）**：hero 图 = work-metal-assembly.jpg 完整显示（height:auto 无裁切）、hero 层 z-index:2 防下节遮挡、两栏 48px 偏移顶部齐平、hero 顶部 0；标题 2 行 27px（question + accent span block + text-wrap:balance）；全站 .case-card img 无 aspect-ratio/object-fit（height:auto 完整显示），hover zoom 已删；HIW 标题竖线删除（.hero-split + .section h2::before display:none），HIW 段 margin-top:-52px + position:relative + bg 白 填入图片左侧空档；section 36px、卡片 gap 16px、container 1140
+- **Work 页**：9 卡（回加 Plastic Components + Metal Parts，用首页同款图）；**hero 与卡片 1 不撞图**（hero=metal-assembly，card1=plastic-parts）
+- **check_copy**：基线 index 136 / work 181；work 必备事实改 'references are available on request'（26-SKU 随 Programs 行删除）
+- **⚡ 关键教训（重复 4+ 次）**：①**本地预览必须发 no-cache 头**——serve_local.py 已加 `Cache-Control: no-cache, no-store`，否则浏览器启发式缓存让用户连续看到旧页面，产生"没有变化"投诉；②**"没有变化"投诉先 curl/无头浏览器验证服务器产物，再考虑改代码**——本次曾盲改 3 轮；③**交付前用 playwright 无头截图自查**（npx playwright screenshot，浏览器已装），不要让用户当 QA——本次 15+ 轮往返的教训；④serve_local 用 ThreadingTCPServer（单线程版会被浏览器并行连接卡死）；⑤Windows 下预览服务器 CWD 占用 dist 导致 build rmtree 失败——改版前必须先杀 8897 进程（netstat+taskkill）
+- **已 push**：42 commits（744d3bd..c20c774）备份至 GitHub ✓；**待办仅剩：用户拖 dist/ 部署 Cloudflare**
+
 ## 2026-09-01 追加：定位改版落地（sourcing agent on the ground，commit e2982e1）
 
 - **背景**：用户两条桌面指令（合并版）要求商业转化优化。两条定位冲突（"Manufacturing Partner" 商业味 vs "Founder-led sourcing agent" 个人味）——**裁决按后者**（与 8/9 以来全部已确认定位一致；指令一明文禁 "manufacturing partner"）；指令一的不冲突机械项（紧凑 hero/间距收紧/删弱项目/去灰框/按钮简化）全部吸收
