@@ -61,6 +61,15 @@ scripts/verify_geo.py          ← build 后全量验证（title/meta/hero/schem
 - **未提交 git**：今天所有改动（work 模板/文案/图片/规则文档）未 commit——明天先提交
 - **待部署**：dist 9 张版已就绪未拖
 
+## 2026-09-01 追加：中国大陆访问已封禁（用户要求）
+
+- **Cloudflare WAF 自定义规则**（zone 级，1/5 免费额度）：`Block China traffic` = `(ip.src.country eq "CN")` → **Block**，Active
+- 一条规则覆盖全部四站 + www（同 zone 子域名）
+- **验证（2026-09-01 实测）**：本机直连 yukfo.com/us/uk/eu 全 403 ✅；走 clash 代理（127.0.0.1:33210）200 ✅；Google 爬虫（US IP）不受影响
+- **自己看站**：直连打不开，必须走 clash/VPN（用户已确认接受）
+- **解除方法**：Dashboard → Security → Security rules → 删除/禁用该规则，秒级生效
+- 顺带效果：百度等中国爬虫也被拦（英文 B2B 站零损失）
+
 ## 待办（2026-09-01 核实更新）
 
 1. ~~部署 9 张版 dist~~ ✅ **已上线**（2026-09-01 验证：www.yukfo.com/work/ 有 9 张 case-card，首页 hero 已是 "custom products and components" 新文案）
