@@ -25,7 +25,7 @@ MARKET_MUST_KEEP = {
     'uk': {'index': ['accountable']},
     'eu': {'index': ['quality checks', 'documentation']},
 }
-BASELINE_WORDS = {'index': 165, 'services': 528, 'work': 181, 'contact': 508}  # 2026-09-01 重校：work 回到 9 卡（+Plastic Components/Metal Parts）；删 kicker/Programs、services CTA 移页底
+BASELINE_WORDS = {'index': 136, 'services': 528, 'work': 181, 'contact': 508}  # 2026-09-01 重校：首页卡片描述句按用户截图指令删除、hero 再压缩
 PAGE_BAND = (0.70, 1.10)   # 上界放宽：v3.1 信任包（hero 数字条/实体锚点/表单隐藏字段）有意新增少量词
 TOTAL_BAND = (0.70, 1.10)  # 上界放宽：8/25 改版 5→4 页，词数结构性下降后重校
 

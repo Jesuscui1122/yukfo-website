@@ -41,7 +41,7 @@
         <a class="btn" href="contact">{{cta_primary}}</a>
         <a class="btn btn-ghost" href="contact" style="margin-left:10px">{{cta_secondary}}</a>
         <!-- BR No. 待核验证书后加回（候选 80477500）：缺信息比假信息安全 -->
-        <p style="margin-top:16px;color:var(--gray);font-size:.82rem">Reply within 24 hours on working days · Yukfo Limited, Hong Kong</p>
+        <p style="margin-top:10px;color:var(--gray);font-size:.82rem">Reply within 24 hours on working days · Yukfo Limited, Hong Kong</p>
       </div>
       <div class="hero-img"><img src="assets/images/work/work-plastic-parts.jpg" alt="Colored plastic parts from a delivered project"></div>
     </div>
@@ -63,9 +63,9 @@
     <div class="container">
       <h2>Selected Sourcing Projects</h2>
       <div class="case-grid">
-        <div class="case-card"><img src="assets/images/work/work-plastic-parts.jpg" alt="Colored plastic parts from a delivered project"><div class="c-body"><span class="c-tag">INJECTION MOLDING</span><h3>Plastic Components</h3><p>Supplier sourcing, sample verification and production follow-up.</p></div></div>
-        <div class="case-card"><img src="assets/images/work/work-precision-metal.jpg" alt="Precision metal parts"><div class="c-body"><span class="c-tag">METAL FABRICATION</span><h3>Metal Parts</h3><p>Supplier search, quotation comparison and quality coordination.</p></div></div>
-        <div class="case-card"><img src="assets/images/work/work-finished-product.jpg" alt="Industrial fan sourced from a Chinese supplier"><div class="c-body"><span class="c-tag">PRODUCT SOURCING</span><h3>Product Sourcing</h3><p>Finding suitable suppliers based on customer requirements.</p></div></div>
+        <div class="case-card"><img src="assets/images/work/work-plastic-parts.jpg" alt="Colored plastic parts from a delivered project"><div class="c-body"><span class="c-tag">INJECTION MOLDING</span><h3>Plastic Components</h3></div></div>
+        <div class="case-card"><img src="assets/images/work/work-precision-metal.jpg" alt="Precision metal parts"><div class="c-body"><span class="c-tag">METAL FABRICATION</span><h3>Metal Parts</h3></div></div>
+        <div class="case-card"><img src="assets/images/work/work-finished-product.jpg" alt="Industrial fan sourced from a Chinese supplier"><div class="c-body"><span class="c-tag">PRODUCT SOURCING</span><h3>Product Sourcing</h3></div></div>
       </div>
       <p style="margin-top:26px"><a class="btn btn-ghost" href="work">See All Work</a></p>
     </div>
