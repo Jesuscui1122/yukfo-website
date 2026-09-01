@@ -16,7 +16,7 @@ WARN_WORDS = [' always', 'everything', 'never']
 MUST_KEEP = {
     'index':    ['custom products and components'],
     'services': ['PA6', 'ABS', 'PP', 'EVA', 'IXPE'],
-    'work':     ['26-SKU'],
+    'work':     ['references are available on request'],
     'contact':  ['24 hours', '30%', '70%'],
 }
 # 市场版必备事实 = GEO 市场差异信号（check --dir dist/us 等时生效）
@@ -25,7 +25,7 @@ MARKET_MUST_KEEP = {
     'uk': {'index': ['accountable']},
     'eu': {'index': ['quality checks', 'documentation']},
 }
-BASELINE_WORDS = {'index': 165, 'services': 528, 'work': 179, 'contact': 508}  # 2026-09-01 重校：定位改版（sourcing agent on the ground + 卡片一句价值 + How It Works 删 CTA）
+BASELINE_WORDS = {'index': 165, 'services': 528, 'work': 158, 'contact': 508}  # 2026-09-01 重校：删 kicker/Programs 行、services CTA 移页底、work 必备事实改 references 句
 PAGE_BAND = (0.70, 1.10)   # 上界放宽：v3.1 信任包（hero 数字条/实体锚点/表单隐藏字段）有意新增少量词
 TOTAL_BAND = (0.70, 1.10)  # 上界放宽：8/25 改版 5→4 页，词数结构性下降后重校
 

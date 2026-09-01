@@ -15,5 +15,9 @@ class H(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a): pass
 
 os.chdir(sys.argv[1] if len(sys.argv) > 1 else '.')
-with socketserver.TCPServer(("127.0.0.1", 8897), H) as httpd:
+# ThreadingTCPServer: 浏览器会并行开连接（预连接不发请求也会占住 handler），
+# 单线程版会被一个挂起连接卡死全部请求
+socketserver.TCPServer.allow_reuse_address = True
+with socketserver.ThreadingTCPServer(("127.0.0.1", 8897), H) as httpd:
+    httpd.daemon_threads = True
     httpd.serve_forever()

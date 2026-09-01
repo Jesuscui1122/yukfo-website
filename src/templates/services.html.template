@@ -49,7 +49,6 @@
     <div class="container">
       <h2>Why Work With a Sourcing Agent?</h2>
       <p class="lead">Factories make products. My job is to help you find the right factory, compare options and manage communication. One contact in China for the whole chain: supplier verification, itemized quotes and production follow-up until delivery.</p>
-      <a class="btn" href="contact">Start a Project</a>
     </div>
   </section>
 
@@ -84,6 +83,14 @@
         <tr><td>Zinc Alloys</td><td>Metal</td><td>Die-cast brackets, housings, locks, handles</td><td>Zinc die-casting</td><td>Paint, plating</td><td>Complex shapes with thin walls in one step</td></tr>
         <tr><td>Carbon &amp; Stainless Steel</td><td>Metal</td><td>Brackets, plates, stamped hardware, frames</td><td>Stamping, bending, laser cutting</td><td>Powder coating</td><td>Strength for structural parts; powder coat protects against rust</td></tr>
       </table></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Start Your Project</h2>
+      <p class="lead">Tell me what you need. I'll reply with supplier options and an itemized quote within 24 hours on working days.</p>
+      <a class="btn" href="contact">Start a Project</a>
     </div>
   </section>
 </main>

@@ -38,7 +38,6 @@
       <div class="hero-text">
         <h1>{{hero_h1}} <span style="color:var(--gold-deep)">{{hero_h1_accent}}</span></h1>
         <p class="sub">{{hero_sub}}</p>
-        <p class="hero-kicker">One contact. Multiple suppliers. Complete coordination.</p>
         <a class="btn" href="contact">{{cta_primary}}</a>
         <a class="btn btn-ghost" href="contact" style="margin-left:10px">{{cta_secondary}}</a>
         <!-- BR No. 待核验证书后加回（候选 80477500）：缺信息比假信息安全 -->
@@ -51,7 +50,7 @@
   <section class="section">
     <div class="container">
       <h2>How It Works</h2>
-      <p class="lead">Send your requirements. I handle supplier sourcing, verification and coordination in China.</p>
+      <p class="lead">I find suppliers, verify options and manage the process in China.</p>
       <div class="flow">
         <div class="step"><div class="n">01</div><div class="t">Tell me what you need</div><div class="d">Send drawings, samples, product ideas or requirements.</div></div>
         <div class="step"><div class="n">02</div><div class="t">I find and verify suppliers</div><div class="d">I compare options, check capabilities and coordinate samples.</div></div>
