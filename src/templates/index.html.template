@@ -13,8 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=20260901x">
-<script src="assets/js/main.js?v=20260901x" defer></script>
+<link rel="stylesheet" href="assets/css/style.css?v=20260901y">
+<script src="assets/js/main.js?v=20260901y" defer></script>
 {{hreflang_block}}
 {{schema_block}}
 </head>
@@ -43,7 +43,7 @@
         <!-- BR No. 待核验证书后加回（候选 80477500）：缺信息比假信息安全 -->
         <p style="margin-top:10px;color:var(--gray);font-size:.82rem">Reply within 24 hours on working days · Yukfo Limited, Hong Kong</p>
       </div>
-      <div class="hero-img"><img src="assets/images/work/work-mold-and-bottle.jpg" alt="Custom bottle with its mold, from a delivered project"></div>
+      <div class="hero-img"><img src="assets/images/work/work-aluminum-extrusion.jpg" alt="Aluminum extrusion profiles from a delivered project"></div>
     </div>
   </section>
 
