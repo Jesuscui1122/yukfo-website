@@ -166,8 +166,8 @@ h1,h2,h3{line-height:1.35}
 /* ============ Modern Minimal (2026-08-25) ============ */
 /* split hero: left text, right image */
 .hero-split{padding:24px 0 0}
-/* Hero 与下一个 section 的间隙：用户要求缩小一半 */
-.hero-split + .section{padding-top:6px}
+/* Hero 与下一个 section 的间隙：标题区上移填入图片左侧空档 */
+.hero-split + .section{margin-top:-52px;padding-top:6px;position:relative;background:var(--bg)}
 .hero-split .container{display:flex;align-items:flex-start;gap:28px}
 .hero-split .hero-text{flex:0.9;min-width:0;margin-top:52px}
 .hero-split .hero-img{margin-top:52px}
@@ -175,7 +175,7 @@ h1,h2,h3{line-height:1.35}
 .hero-split + .section h2::before{display:none}
 .hero-split h1{font-size:clamp(22px,2.4vw,24px);font-weight:700;line-height:1.12;letter-spacing:-.02em;max-width:620px}
 .hero-split h1 span{display:block;margin-top:6px;text-wrap:balance}
-.hero-split .sub{font-size:1rem;color:var(--gray);max-width:520px;margin:10px 0 18px;line-height:1.6}
+.hero-split .sub{font-size:1rem;color:var(--gray);max-width:520px;margin:14px 0 22px;line-height:1.6}
 .hero-split .hero-img{flex:1}
 .hero-split .hero-img img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);background:var(--bg);box-shadow:0 18px 44px rgba(30,58,95,.16)}
 /* case grid: clean 3-col photo wall */
